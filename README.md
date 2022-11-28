@@ -1,2 +1,2 @@
 # ejemplo
-#intergrantes
+integrantes
