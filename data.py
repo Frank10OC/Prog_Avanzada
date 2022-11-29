@@ -7,8 +7,8 @@ st.subheader("Miembros del equipo")
 st.markdown("""
 - Palacios Ninahuanca, Ninoska
 - Orozco Chupos, Frank
-- Jorch
-- Yasmin
+- Quispe Laura, Jhorch
+- Parillo Sanchez, Yassmin Diana
 """)
 st.markdown("""
 ---
