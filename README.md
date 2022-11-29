@@ -1,12 +1,14 @@
 # Índices Soberanos 2010 - 2022
 
-_Acá va un párrafo que describa lo que es el proyecto_
+_PROYECTO DE PROGRAMACIÓN AVANZADA_
 
-## Comenzando 🚀
-
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+## Integrantes: 📋
+_Palacios Ninahuanca, Ninoska_
+_Orozco Chupos, Frank_
+_Quispe Laura, Jhorch_
+_Parillo Sanchez, Yassmin Diana_
 
 Mira **Deployment** para conocer como desplegar el proyecto.
 
 
-### Pre-requisitos 📋
+### Pre-requisitos 🚀
