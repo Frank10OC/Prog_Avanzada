@@ -26,14 +26,15 @@ def load_data():
 st.checkbox("Use container width", value=False, key="use_container_width")
 
 df = load_data()
+st.write("**Datos generales**")
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/data/indices_soberanos.csv"
 c=pd.read_csv(url)
 
-st.markdown("""Comparación del INDICE_NOMINAL e INDICE_REAL""") 
+st.markdown("""**Comparación del INDICE_NOMINAL e INDICE_REAL**""") 
 df = c.drop(columns = ["RENT_ANUAL_IN","RENT_ANUAL_IR"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
-
+st.write("**Gráfica**")
 st.line_chart(c, x='FECHA', y=['INDICE_NOMINAL', 'INDICE_REAL'])
 
 st.markdown("""INDICE_NOMINAL","RENT_ANUAL_IN""")
