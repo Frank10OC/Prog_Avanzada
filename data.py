@@ -31,7 +31,7 @@ st.dataframe(df, use_container_width=st.session_state.use_container_width)
 c=df
 
 st.markdown("""comparación del Índice nominal e Índice real""") 
-df = c.drop(columns = ["INDICE_NOMINAL","FECHA","INDICE_REAL"])
+df = c.drop(columns = ["INDICE_NOMINAL","INDICE_REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.line_chart(df)
 
