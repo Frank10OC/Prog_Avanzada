@@ -26,12 +26,12 @@ def load_data():
 st.checkbox("Use container width", value=False, key="use_container_width")
 
 df = load_data()
-#url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/data/indices_soberanos.csv"
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
-c=df
+url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/data/indices_soberanos.csv"
+c=pd.read_csv(url)
 
 st.markdown("""comparación del Índice nominal e Índice real""") 
-df = c.drop(columns = ["INDICE_NOMINAL","INDICE_REAL"])
+df = c.drop(columns = ["FECHA","INDICE_NOMINAL","INDICE_REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.line_chart(df)
 
