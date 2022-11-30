@@ -29,7 +29,7 @@ df = load_data()
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
 c=pd.read_csv(url)
-#comparación del Índice nominal e Índice real 
+st.markdown("""comparación del Índice nominal e Índice real""") 
 df = c.drop(columns = ["FECHA","INDICE_NOMINAL","INDICE_REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.line_chart(df)
