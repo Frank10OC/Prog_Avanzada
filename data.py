@@ -22,7 +22,7 @@ Fuente de datos: (https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberano
 
 def load_data():
     url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/data/indices_soberanos.csv"
-    return pd.read_csv(url sep=",")
+    return pd.read_csv(url sep= ',')
 st.checkbox("Use container width", value=False, key="use_container_width")
 
 df = load_data()
