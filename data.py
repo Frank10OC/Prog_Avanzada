@@ -59,10 +59,37 @@ df_fecha = df1[df1["FECHA"] == opcion_fecha]
 num_filas = len(df_fecha.axes[0])
  
 
-
+#FECHAS
 def load_fecha():
     url="https://raw.githubusercontent.com/Frank10OC/ejemplo/main/fecha.csv"
     return pd.read_csv(url, sep= ';')
 dfecha = load_fecha()
 st.write("**Fechas**")
 st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
+
+##################################################################33
+#Sistema de filtros
+
+#Construccion del set/list de AÑO (Valores unicos sin NA)
+fecha_año = np.sort(dfecha['AÑO'].dropna().unique())
+#Seleccion del AÑO
+opcion_año = st.selectbox('Selecciona un año', fecha_año)
+df_año = dfecha[dfecha['AÑO'] == opcion_año]
+num_filas = len(df_año.axes[0]) 
+
+#Construccion del set/list de MES (Valores unicos sin NA)
+fecha_mes = np.sort(df_año['MES'].dropna().unique())
+#Seleccion de la provincia
+opcion_mes = st.selectbox('Selecciona un mes', fecha_mes)
+df_mes = df_año[df_año['MES'] == opcion_mes]
+num_filas = len(df_mes.axes[0]) 
+
+#Construccion del set/list de distritos (Valores unicos sin NA)
+fecha_dia = np.sort(df_año['DÍA'].dropna().unique())
+#Seleccion del día
+opcion_dia = st.selectbox('Selecciona un día', fecha_dia)
+df_dia = df_año[df_año['DÍA'] == opcion_dia]
+num_filas = len(df_dia.axes[0]) 
+
+st.write('Numero de registros:', num_filas)
+############################################################################
