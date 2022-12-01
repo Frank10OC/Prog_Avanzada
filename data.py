@@ -58,3 +58,11 @@ opcion_fecha = st.selectbox('Selecciona una fecha', set_fecha)
 df_fecha = df1[df1["FECHA"] == opcion_fecha]
 num_filas = len(df_fecha.axes[0])
  
+
+
+def load_fecha():
+    url="https://raw.githubusercontent.com/Frank10OC/ejemplo/main/fecha.csv"
+    return pd.read_csv(url, sep= ',')
+dfecha = load_fecha()
+st.write("**Fechas**")
+st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
