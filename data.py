@@ -88,9 +88,15 @@ fecha_dia = np.sort(df_año['DÍA'].dropna().unique())
 #Seleccion del día
 opcion_dia = st.selectbox('Selecciona un día', fecha_dia)
 df_dia = df_mes[df_mes['DÍA'] == opcion_dia]
-num_filas = len(df_dia.axes[0]) 
-st.info(df_dia.iloc[0,5]) 
-
+num_filas = len(df_dia.axes[0])
+if (num_filas==0):
+    st.info(df_dia.iloc[0,3]) 
+    st.info(df_dia.iloc[0,4]) 
+    st.info(df_dia.iloc[0,5]) 
+    st.info(df_dia.iloc[0,6]) 
+    st.info(df_dia.iloc[0,7]) 
+else:
+    st.warning("No hay datos de la fecha") 
 st.write('Numero de registros:', num_filas)
 ############################################################################
 
