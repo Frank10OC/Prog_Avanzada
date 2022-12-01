@@ -93,3 +93,8 @@ st.info(df_dia[1])
 
 st.write('Numero de registros:', num_filas)
 ############################################################################
+
+from PIL import Image
+image = Image.open('Yass.jpg')
+
+st.image(image, caption='Sunrise by the mountains')
