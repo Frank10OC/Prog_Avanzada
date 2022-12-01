@@ -49,15 +49,7 @@ st.markdown("""**Comparación del Renta Anual de Indice Nominal y Renta Anual In
 df = c.drop(columns = ['INDICE_NOMINAL', 'INDICE_REAL'])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.write("**Gráfica**")
-st.line_chart(c, x='FECHA', y=["RENT_ANUAL_IN","RENT_ANUAL_IR"])
-
-df1= c
-set_fecha= np.sort(df1["FECHA"].dropna().unique())
-#Seleccion del departamento
-opcion_fecha = st.selectbox('Selecciona una fecha', set_fecha)
-df_fecha = df1[df1["FECHA"] == opcion_fecha]
-num_filas = len(df_fecha.axes[0])
- 
+st.line_chart(c, x='FECHA', y=["RENT_ANUAL_IN","RENT_ANUAL_IR"]) 
 
 #FECHAS
 def load_fecha():
