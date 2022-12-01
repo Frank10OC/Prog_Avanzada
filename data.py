@@ -97,6 +97,6 @@ st.write('Numero de registros:', num_filas)
 
 
 from PIL import Image 
-img = Image.open("Yass.jpg") 
+img = Image.open("https://github.com/Frank10OC/ejemplo/blob/main/IMG/Yass.jpg") 
   
 st.image(img, width=200)
