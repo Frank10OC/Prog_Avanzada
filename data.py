@@ -62,11 +62,12 @@ df_año = dfecha[dfecha['AÑO'] == opcion_año]
 num_filas = len(df_año.axes[0]) 
 
 #Construccion del set/list de MES (Valores unicos sin NA)
-fecha_mes = np.sort(df_año['MES'].dropna().unique())
-#Seleccion de la provincia
+fecha_mes =(df_año['MES'].dropna().unique())
+#Seleccion de MES
 opcion_mes = st.selectbox('Selecciona un mes', fecha_mes)
 df_mes = df_año[df_año['MES'] == opcion_mes]
 num_filas = len(df_mes.axes[0]) 
+
 #Construccion del set/list de distritos (Valores unicos sin NA)
 fecha_dia = np.sort(df_año['DÍA'].dropna().unique())
 #Seleccion del día
