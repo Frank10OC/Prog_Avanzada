@@ -94,3 +94,9 @@ st.info(df_dia)
 
 st.write('Numero de registros:', num_filas)
 ############################################################################
+
+
+from PIL import Image 
+img = Image.open("Yass.jpg") 
+  
+st.image(img, width=200)
