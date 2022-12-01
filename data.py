@@ -12,6 +12,18 @@ st.markdown("""
 """)
 st.markdown("""
 ---
+from PIL import Image
+image1 = Image.open('Yass.jpg')
+st.image(image1, caption='Yassmin Parillo Sánchez')
+image2 = Image.open('Frank.jpg')
+st.image(image2, caption='Frank Orozco Chupos')
+image3 = Image.open('Nino.jpg')
+st.image(image3, caption='Ninoska Palacios Ninahuanca')
+image4 = Image.open('Yass.jpg')
+st.image(image4, caption='Jhorch Quispe Laura')
+
+
+
 La información contenida en esta página web permite acceder al Dataset “Índices Soberanos 2010 - 2022” 
 elaborado por el Ministerio de Economía y Finanzas del Perú.
 
@@ -88,19 +100,9 @@ fecha_dia = np.sort(df_año['DÍA'].dropna().unique())
 #Seleccion del día
 opcion_dia = st.selectbox('Selecciona un día', fecha_dia)
 df_dia = df_mes[df_mes['DÍA'] == opcion_dia]
-num_filas = len(df_dia.axes[0])
-if (num_filas==1):
-    st.markdown("#### This is a markdown") 
-    st.success(df_dia.iloc[0,3]) 
-    st.success(df_dia.iloc[0,4]) 
-    st.success(df_dia.iloc[0,5]) 
-    st.success(df_dia.iloc[0,6])
-else:
-    st.error("No hay datos de la fecha") 
+num_filas = len(df_dia.axes[0]) 
+st.info(df_dia[1]) 
+
 st.write('Numero de registros:', num_filas)
 ############################################################################
 
-from PIL import Image
-image = Image.open('Yass.jpg')
-
-st.image(image, caption='Sunrise by the mountains')
