@@ -88,7 +88,7 @@ num_filas = len(df_mes.axes[0])
 fecha_dia = np.sort(df_año['DÍA'].dropna().unique())
 #Seleccion del día
 opcion_dia = st.selectbox('Selecciona un día', fecha_dia)
-df_dia = df_año[df_año['DÍA'] == opcion_dia]
+df_dia = df_mes[df_mes['DÍA'] == opcion_dia]
 num_filas = len(df_dia.axes[0]) 
 
 st.write('Numero de registros:', num_filas)
