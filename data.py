@@ -45,6 +45,12 @@ st.markdown("""INDICE_NOMINAL","RENT_ANUAL_IN""")
 i2= c.drop(columns = ["FECHA","INDICE_NOMINAL","RENT_ANUAL_IN"])
 st.dataframe(i2, use_container_width=st.session_state.use_container_width)
 
+st.markdown("""**Comparación del Renta Anual de Indice Nominal e Renta Anual Indice Real**""") 
+df = c.drop(columns = ['INDICE_NOMINAL', 'INDICE_REAL'])
+st.dataframe(df, use_container_width=st.session_state.use_container_width)
+st.write("**Gráfica**")
+st.line_chart(c, x='FECHA', y=["RENT_ANUAL_IN","RENT_ANUAL_IR"])
+
 df1= c
 set_fecha= np.sort(df1["FECHA"].dropna().unique())
 #Seleccion del departamento
