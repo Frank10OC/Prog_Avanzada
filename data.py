@@ -61,7 +61,7 @@ num_filas = len(df_fecha.axes[0])
 
 #FECHAS
 def load_fecha():
-    url="https://raw.githubusercontent.com/Frank10OC/ejemplo/main/fecha.csv"
+    url="https://raw.githubusercontent.com/Frank10OC/ejemplo/main/indices_soberanos_f.csv"
     return pd.read_csv(url, sep= ';')
 dfecha = load_fecha()
 st.write("**Fechas**")
@@ -92,4 +92,5 @@ df_dia = df_mes[df_mes['DÍA'] == opcion_dia]
 num_filas = len(df_dia.axes[0]) 
 
 st.write('Numero de registros:', num_filas)
+
 ############################################################################
