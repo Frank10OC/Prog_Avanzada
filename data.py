@@ -92,5 +92,4 @@ df_dia = df_mes[df_mes['DÍA'] == opcion_dia]
 num_filas = len(df_dia.axes[0]) 
 
 st.write('Numero de registros:', num_filas)
-
 ############################################################################
