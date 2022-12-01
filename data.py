@@ -10,8 +10,6 @@ st.markdown("""
 - Quispe Laura, Jhorch
 - Parillo Sanchez, Yassmin Diana
 """)
-st.markdown("""
----
 from PIL import Image
 image1 = Image.open('Yass.jpg')
 st.image(image1, caption='Yassmin Parillo Sánchez')
@@ -21,8 +19,8 @@ image3 = Image.open('Nino.jpg')
 st.image(image3, caption='Ninoska Palacios Ninahuanca')
 image4 = Image.open('Yass.jpg')
 st.image(image4, caption='Jhorch Quispe Laura')
-
-
+st.markdown("""
+---
 
 La información contenida en esta página web permite acceder al Dataset “Índices Soberanos 2010 - 2022” 
 elaborado por el Ministerio de Economía y Finanzas del Perú.
