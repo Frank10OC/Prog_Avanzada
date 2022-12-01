@@ -93,8 +93,7 @@ if (num_filas==1):
     st.info(df_dia.iloc[0,3]) 
     st.info(df_dia.iloc[0,4]) 
     st.info(df_dia.iloc[0,5]) 
-    st.info(df_dia.iloc[0,6]) 
-    st.info(df_dia.iloc[0,7]) 
+    st.info(df_dia.iloc[0,6])
 else:
     st.warning("No hay datos de la fecha") 
 st.write('Numero de registros:', num_filas)
