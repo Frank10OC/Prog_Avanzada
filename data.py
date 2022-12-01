@@ -83,14 +83,14 @@ fecha_mes = np.sort(df_año['MES'].dropna().unique())
 opcion_mes = st.selectbox('Selecciona un mes', fecha_mes)
 df_mes = df_año[df_año['MES'] == opcion_mes]
 num_filas = len(df_mes.axes[0]) 
-st.info(df_mes.axes[0]) 
+st.info(df_mes) 
 #Construccion del set/list de distritos (Valores unicos sin NA)
 fecha_dia = np.sort(df_año['DÍA'].dropna().unique())
 #Seleccion del día
 opcion_dia = st.selectbox('Selecciona un día', fecha_dia)
 df_dia = df_mes[df_mes['DÍA'] == opcion_dia]
 num_filas = len(df_dia.axes[0]) 
-st.info(df_dia.axes[0]) 
+st.info(df_dia) 
 
 st.write('Numero de registros:', num_filas)
 ############################################################################
