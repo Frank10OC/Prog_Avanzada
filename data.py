@@ -2,7 +2,18 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 #####
-st.sidebar.image("https://www.cayetano.edu.pe/cayetano/templates/g5_hydrogen/custom/images/logo.png", width=200)
+col1, col2, col3 = st.columns(3)
+
+with col1:
+   st.image("https://www.cayetano.edu.pe/cayetano/templates/g5_hydrogen/custom/images/logo.png", width=200)
+
+with col2:
+   st.header("A dog")
+   st.image("https://static.streamlit.io/examples/dog.jpg")
+
+with col3:
+   st.header("An owl")
+   st.image("https://static.streamlit.io/examples/owl.jpg")
 
 #####
 #Título
