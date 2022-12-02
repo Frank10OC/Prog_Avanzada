@@ -1,6 +1,9 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
+#####
+st.image("https://www.cayetano.edu.pe/cayetano/templates/g5_hydrogen/custom/images/logo.png", width=200)
+#####
 #Título
 st.title('Índices Soberanos 2010 - 2022')
 st.subheader("Miembros del equipo")
@@ -10,9 +13,7 @@ st.markdown("""
 - Quispe Laura, Jhorch
 - Parillo Sanchez, Yassmin Diana
 """)
-#####
-st.image("https://www.cayetano.edu.pe/cayetano/templates/g5_hydrogen/custom/images/logo.png", width=200)
-#####
+
 st.markdown("""
 ---
 La información contenida en esta página web permite acceder al Dataset “Índices Soberanos 2010 - 2022” 
