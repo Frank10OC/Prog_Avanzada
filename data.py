@@ -5,10 +5,10 @@ import numpy as np
 col1, col2 = st.columns(2)
 
 with col1:
-   st.image("https://www.cayetano.edu.pe/cayetano/templates/g5_hydrogen/custom/images/logo.png", width=200)
-
+   st.image(https://www.cayetano.edu.pe/cayetano/images/2018/Logo_Oficial.png", width=200)
+  
 with col2:
-   st.image("https://media4.giphy.com/media/H6bfmCcehzqEfWQjqk/giphy.gif", width=200)
+   st.image("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c5129789437667.5df458eb2c774.gif", width=200)
 
 #####
 #Título
