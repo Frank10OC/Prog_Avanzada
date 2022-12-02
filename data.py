@@ -10,6 +10,7 @@ st.markdown("""
 - Quispe Laura, Jhorch
 - Parillo Sanchez, Yassmin Diana
 """)
+st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FCayetano.Oficial%2F&psig=AOvVaw3lzMQmWUWh2iV5Dy4HHQ7Z&ust=1670074603736000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICDy_GG2_sCFQAAAAAdAAAAABAD", width=200)
 st.markdown("""
 ---
 La información contenida en esta página web permite acceder al Dataset “Índices Soberanos 2010 - 2022” 
