@@ -33,7 +33,14 @@ Fuente de datos: (https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberano
 
 ---
 """)
-
+st.subheader("índices del Tesoro")
+st.markdown("""
+---
+Replica el rendimiento de una cartera compuesta por la totalidad de bonos en soles nominales emitidos por el Tesoro que se 
+encuentren vigentes, siendo la participación de cada tipo de bono en la estructura del portafolio igual al valor de mercado de todos 
+los bonos soberanos de ese tipo respecto al valor de mercado total de todos los bonos en soles nominales en circulación.
+---
+""")
 def load_data():
     url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/data/indices_soberanos.csv"
     return pd.read_csv(url, sep= ',')
