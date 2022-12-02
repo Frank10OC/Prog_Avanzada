@@ -2,21 +2,20 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 #####
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 
 with col1:
    st.image("https://www.cayetano.edu.pe/cayetano/templates/g5_hydrogen/custom/images/logo.png", width=200)
 
-with col2:
-   st.image("https://diariocorreo.pe/resizer/Fc7YLo9pXk9ykDycNAg8OkQ58LE=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/KXKXRKMB7NGKLE3ASDKUGPVDRI.jpg", width=200)
 
-with col3:
+with col2:
    st.image("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c5129789437667.5df458eb2c774.gif", width=200)
-   st.image("https://thumbs.gfycat.com/EntireIdioticFlickertailsquirrel-max-1mb.gif", width=200)
 
 #####
 #Título
 st.title('Índices Soberanos 2010 - 2022')
+st.image("https://diariocorreo.pe/resizer/Fc7YLo9pXk9ykDycNAg8OkQ58LE=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/KXKXRKMB7NGKLE3ASDKUGPVDRI.jpg", width=300)
+
 st.subheader("Miembros del equipo")
 st.markdown("""
 - Palacios Ninahuanca, Ninoska
