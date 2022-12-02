@@ -66,28 +66,34 @@ st.write("**Fechas**")
 st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 
 ##################################################################33
-#Sistema de filtros
+#Filtraje
+col1, col2, col3 = st.columns(3)
 
-#Construccion del set/list de AÑO (Valores unicos sin NA)
-fecha_año = np.sort(dfecha['AÑO'].dropna().unique())
-#Seleccion del AÑO
-opcion_año = st.selectbox('Selecciona un año', fecha_año)
-df_año = dfecha[dfecha['AÑO'] == opcion_año]
-num_filas = len(df_año.axes[0]) 
+with col1:
+   #Construccion del set/list de AÑO (Valores unicos sin NA)
+   fecha_año = np.sort(dfecha['AÑO'].dropna().unique())
+   #Seleccion del AÑO
+   opcion_año = st.selectbox('Selecciona un año', fecha_año)
+   df_año = dfecha[dfecha['AÑO'] == opcion_año]
+   num_filas = len(df_año.axes[0]) 
 
-#Construccion del set/list de MES (Valores unicos sin NA)
-fecha_mes =(df_año['MES'].dropna().unique())
-#Seleccion de MES
-opcion_mes = st.selectbox('Selecciona un mes', fecha_mes)
-df_mes = df_año[df_año['MES'] == opcion_mes]
-num_filas = len(df_mes.axes[0]) 
+with col2:
+   #Construccion del set/list de MES (Valores unicos sin NA)
+   fecha_mes =(df_año['MES'].dropna().unique())
+   #Seleccion de MES
+   opcion_mes = st.selectbox('Selecciona un mes', fecha_mes)
+   df_mes = df_año[df_año['MES'] == opcion_mes]
+   num_filas = len(df_mes.axes[0]) 
+with col3:   
+   #Construccion del set/list de distritos (Valores unicos sin NA)
+   fecha_dia = np.sort(df_año['DÍA'].dropna().unique())
+   #Seleccion del día
+   opcion_dia = st.selectbox('Selecciona un día', fecha_dia)
+   df_dia = df_mes[df_mes['DÍA'] == opcion_dia]
+   num_filas = len(df_dia.axes[0])
+            
 
-#Construccion del set/list de distritos (Valores unicos sin NA)
-fecha_dia = np.sort(df_año['DÍA'].dropna().unique())
-#Seleccion del día
-opcion_dia = st.selectbox('Selecciona un día', fecha_dia)
-df_dia = df_mes[df_mes['DÍA'] == opcion_dia]
-num_filas = len(df_dia.axes[0])
+            
 if (num_filas==1):
     st.markdown("###### INDICE NOMINAL") 
     st.success(df_dia.iloc[0,3])
