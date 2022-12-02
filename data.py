@@ -11,8 +11,7 @@ st.markdown("""
 - Parillo Sanchez, Yassmin Diana
 """)
 #####
-st.set_page_config(page_icon="📊", page_title="Detección de anomalías cardiacas", layout="wide")
-st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FCayetano.Oficial%2F&psig=AOvVaw3lzMQmWUWh2iV5Dy4HHQ7Z&ust=1670074603736000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICDy_GG2_sCFQAAAAAdAAAAABAD", width=200)
+st.image("https://www.cayetano.edu.pe/cayetano/templates/g5_hydrogen/custom/images/logo.png", width=200)
 #####
 st.markdown("""
 ---
