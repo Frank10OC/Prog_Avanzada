@@ -12,6 +12,7 @@ with col2:
 
 with col3:
    st.image("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c5129789437667.5df458eb2c774.gif", width=200)
+   st.image("https://thumbs.gfycat.com/EntireIdioticFlickertailsquirrel-max-1mb.gif", width=200)
 
 #####
 #Título
