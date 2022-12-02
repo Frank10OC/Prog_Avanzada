@@ -8,7 +8,7 @@ with col1:
    st.image("https://www.cayetano.edu.pe/cayetano/templates/g5_hydrogen/custom/images/logo.png", width=200)
 
 with col2:
-   st.image("https://thumbs.gfycat.com/EntireIdioticFlickertailsquirrel-max-1mb.gif", width=200)
+   st.image("https://media4.giphy.com/media/H6bfmCcehzqEfWQjqk/giphy.gif", width=200)
 
 #####
 #Título
