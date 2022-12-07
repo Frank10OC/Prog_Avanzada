@@ -42,11 +42,11 @@ valor de mercado total de todos los bonos en soles nominales (o VAC) en circulac
 """)
 
 
-
+#IMPORTANDO DATOS
 def load_data():
     url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/data/indices_soberanos.csv"
     return pd.read_csv(url, sep= ',')
-st.checkbox("Use container width", value=False, key="use_container_width")
+#st.checkbox("Use container width", value=False, key="use_container_width")
 
 df = load_data()
 st.write("**Datos generales**")
@@ -57,8 +57,8 @@ c=pd.read_csv(url)
 st.markdown("""**Comparación del INDICE_NOMINAL e INDICE_REAL**""") 
 df = c.drop(columns = ["RENT_ANUAL_IN","RENT_ANUAL_IR"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
-st.write("**Gráfica**")
-st.line_chart(c, x='FECHA', y=['INDICE_NOMINAL', 'INDICE_REAL'])
+st.write("**Gráfica: Comparación Índice Nominal - Comparación Índice Real**")
+st.line_chart(c, x='FECHA', y=['INDICE NOMINAL', 'INDICE REAL'])
 
 st.markdown("""**Comparación del Renta Anual de Indice Nominal y Renta Anual Indice Real**""") 
 df = c.drop(columns = ['INDICE_NOMINAL', 'INDICE_REAL'])
@@ -75,7 +75,7 @@ st.write("**Fechas**")
 st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 
 ##################################################################33
-#Filtraje
+#Filtraje de AÑO-MES-DÍA
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -117,7 +117,8 @@ else:
 st.write('Numero de registros:', num_filas)
 ############################################################################
 
-from PIL import Image
-image = Image.open('Yass.jpg')
-
-st.image(image, caption='Sunrise by the mountains')
+#### IMG ####
+#from PIL import Image
+#image = Image.open('Yass.jpg')
+#st.image(image, caption='Sunrise by the mountains')
+####
