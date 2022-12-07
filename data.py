@@ -31,6 +31,9 @@ elaborado por el Ministerio de Economía y Finanzas del Perú (MEF).
 Fuente de datos: (https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberanos-2010-2022)
 
 """)
+#boton
+if st.button('Click here') is True:
+       st.write('Great')
 #IMPORTANDO DATOS
 def load_data():
     url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
