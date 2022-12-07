@@ -54,31 +54,10 @@ st.dataframe(df, use_container_width=st.session_state.use_container_width)
 url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
 c=pd.read_csv(url)
 
-#st.markdown("""**Comparación del Índice Nominal e Índice Real**""")
-st.subheader("Comparación del Índice Nominal e Índice Real")
-df = c.drop(columns = ["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"])
-st.dataframe(df, use_container_width=st.session_state.use_container_width)
-st.write("**Gráfica: Índice Nominal - Índice Real**")
-st.line_chart(c, x='FECHA', y=['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
-
-#st.markdown("""**Comparación de la Renta Anual de Indice Nominal y Renta Anual Indice Real**""")
-st.subheader("Comparación de la Renta Anual de Indice Nominal y Renta Anual Indice Real")
-df = c.drop(columns = ['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
-st.dataframe(df, use_container_width=st.session_state.use_container_width)
-st.write("**Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real**")
-st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"]) 
-
-#FECHAS
-def load_fecha():
-    url="https://raw.githubusercontent.com/Frank10OC/ejemplo/main/indices_soberanos_f.csv"
-    return pd.read_csv(url, sep= ';')
-dfecha = load_fecha()
-
-st.subheader("Fechas")
-#st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 
 ##################################################################
 #Filtraje de AÑO-MES-DÍA
+st.write("**Datos por filtro de fecha**")
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -121,6 +100,32 @@ else:
     st.error("No hay datos de la fecha") 
 
 ############################################################################
+
+
+#st.markdown("""**Comparación del Índice Nominal e Índice Real**""")
+st.subheader("Comparación del Índice Nominal e Índice Real")
+df = c.drop(columns = ["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"])
+st.dataframe(df, use_container_width=st.session_state.use_container_width)
+st.write("**Gráfica: Índice Nominal - Índice Real**")
+st.line_chart(c, x='FECHA', y=['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
+
+#st.markdown("""**Comparación de la Renta Anual de Indice Nominal y Renta Anual Indice Real**""")
+st.subheader("Comparación de la Renta Anual de Indice Nominal y Renta Anual Indice Real")
+df = c.drop(columns = ['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
+st.dataframe(df, use_container_width=st.session_state.use_container_width)
+st.write("**Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real**")
+st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"]) 
+
+#FECHAS
+def load_fecha():
+    url="https://raw.githubusercontent.com/Frank10OC/ejemplo/main/indices_soberanos_f.csv"
+    return pd.read_csv(url, sep= ';')
+dfecha = load_fecha()
+
+st.subheader("Fechas")
+#st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
+
+
 
 #### IMG ####
 #from PIL import Image
