@@ -105,10 +105,13 @@ with col3:
 
             
 if (num_filas==1):
+    col1, col2 = st.columns(2)
+    with col1:
     st.markdown("###### Índice Nominal") 
-    st.success(df_dia.iloc[0,3])
+    st.success(df_dia.iloc[0,3]) 
     st.markdown("###### Renta Anual de Índice Nominal ") 
-    st.success(df_dia.iloc[0,4]) 
+    st.success(df_dia.iloc[0,4])
+    with col2:
     st.markdown("###### Índice Real") 
     st.success(df_dia.iloc[0,5]) 
     st.markdown("###### Renta Anual de Índice Real") 
