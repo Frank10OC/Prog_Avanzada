@@ -51,7 +51,7 @@ st.checkbox("Use container width", value=False, key="use_container_width")
 df = load_data()
 st.write("**Datos generales**")
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
-url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/data/indices_soberanos.csv"
+url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
 c=pd.read_csv(url)
 
 st.markdown("""**Comparación del Índice Nominal e Índice Real**""") 
