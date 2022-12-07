@@ -68,7 +68,7 @@ dfecha = load_fecha()
 #st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 #Filtraje de AÑO-MES-DÍA
 #st.write("**Datos por filtro de fecha**")
-st.markdown("##### Datos Generales") 
+st.markdown("##### Datos por filtro de fecha") 
 col1, col2, col3 = st.columns(3)
 
 with col1:
