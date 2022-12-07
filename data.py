@@ -33,7 +33,7 @@ Fuente de datos: (https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberano
 ---
 """)
 
-st.subheader("¿Qué son los Índices Soberanos? IFJIEWOFOGOWNBOQBP")
+st.subheader("¿Qué son los Índices Soberanos?")
 st.markdown("""
 Es el conjunto de datos que replica el rendimiento de una crtera compuesta en su totaludad de bonos nominales
 (o VAC) emitidos por el Tesoro que se encuentren vigentes, siendo la participacoión de cada tipo de bono en
