@@ -54,16 +54,18 @@ st.dataframe(df, use_container_width=st.session_state.use_container_width)
 url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
 c=pd.read_csv(url)
 
-st.markdown("""**Comparación del Índice Nominal e Índice Real**""") 
+#st.markdown("""**Comparación del Índice Nominal e Índice Real**""")
+st.subheader("Comparación del Índice Nominal e Índice Real")
 df = c.drop(columns = ["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
-st.write("**Gráfica: Comparación Índice Nominal - Comparación Índice Real**")
+st.write("**Gráfica: Índice Nominal - Índice Real**")
 st.line_chart(c, x='FECHA', y=['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
 
-st.markdown("""**Comparación del Renta Anual de Indice Nominal y Renta Anual Indice Real**""") 
+#st.markdown("""**Comparación de la Renta Anual de Indice Nominal y Renta Anual Indice Real**""")
+st.subheader("Comparación de la Renta Anual de Indice Nominal y Renta Anual Indice Real")
 df = c.drop(columns = ['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
-st.write("**Gráfica**")
+st.write("**Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real**")
 st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"]) 
 
 #FECHAS
@@ -75,7 +77,7 @@ dfecha = load_fecha()
 st.subheader("Fechas")
 #st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 
-##################################################################33
+##################################################################
 #Filtraje de AÑO-MES-DÍA
 col1, col2, col3 = st.columns(3)
 
@@ -101,9 +103,8 @@ with col3:
    opcion_dia = st.selectbox('Selecciona un día', fecha_dia)
    df_dia = df_mes[df_mes['DÍA'] == opcion_dia]
    num_filas = len(df_dia.axes[0])
-            
-
-            
+   
+#Respuesta del filtraje de fechas           
 if (num_filas==1):
     col1, col2 = st.columns(2)
     with col1:
@@ -118,7 +119,7 @@ if (num_filas==1):
       st.success(df_dia.iloc[0,6])
 else:
     st.error("No hay datos de la fecha") 
-st.write('Numero de registros:', num_filas)
+
 ############################################################################
 
 #### IMG ####
