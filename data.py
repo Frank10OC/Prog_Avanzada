@@ -55,16 +55,16 @@ url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/data/indices_sobe
 c=pd.read_csv(url)
 
 st.markdown("""**Comparación del Índice Nominal e Índice Real**""") 
-df = c.drop(columns = ["RENT_ANUAL_IN","RENT_ANUAL_IR"])
+df = c.drop(columns = ["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.write("**Gráfica: Comparación Índice Nominal - Comparación Índice Real**")
-st.line_chart(c, x='FECHA', y=['INDICE_NOMINAL', 'INDICE_REAL'])
+st.line_chart(c, x='FECHA', y=['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
 
 st.markdown("""**Comparación del Renta Anual de Indice Nominal y Renta Anual Indice Real**""") 
-df = c.drop(columns = ['INDICE_NOMINAL', 'INDICE_REAL'])
+df = c.drop(columns = ['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.write("**Gráfica**")
-st.line_chart(c, x='FECHA', y=["RENT_ANUAL_IN","RENT_ANUAL_IR"]) 
+st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"]) 
 
 #FECHAS
 def load_fecha():
