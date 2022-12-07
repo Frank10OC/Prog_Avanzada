@@ -51,7 +51,7 @@ st.checkbox("Use container width", value=False, key="use_container_width")
 st.subheader("Datos")
 
 df = load_data()
-st.write("**Datos generales**")
+st.write("*Datos generales*")
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
 c=pd.read_csv(url)
@@ -66,7 +66,7 @@ def load_fecha():
 dfecha = load_fecha()
 #st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 #Filtraje de AÑO-MES-DÍA
-st.write("**Datos por filtro de fecha**")
+st.write("*Datos por filtro de fecha*")
 col1, col2, col3 = st.columns(3)
 
 with col1:
