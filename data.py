@@ -46,7 +46,7 @@ valor de mercado total de todos los bonos en soles nominales (o VAC) en circulac
 def load_data():
     url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/data/indices_soberanos.csv"
     return pd.read_csv(url, sep= ',')
-#st.checkbox("Use container width", value=False, key="use_container_width")
+st.checkbox("Use container width", value=False, key="use_container_width")
 
 df = load_data()
 st.write("**Datos generales**")
