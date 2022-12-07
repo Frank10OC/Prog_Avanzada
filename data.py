@@ -18,7 +18,7 @@ st.image("https://diariocorreo.pe/resizer/Fc7YLo9pXk9ykDycNAg8OkQ58LE=/580x330/s
 st.subheader("Miembros del equipo")
 st.markdown("""
 - Palacios Ninahuanca, Ninoska
-- Orozco Chupos, Frank AGUSTIN
+- Orozco Chupos, Frank 
 - Quispe Laura, Jhorch
 - Parillo Sanchez, Yassmin Diana
 """)
