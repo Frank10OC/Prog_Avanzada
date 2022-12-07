@@ -48,7 +48,11 @@ El índice nominal de una acción es el precio de una acción en el momento de
 """)
 st.subheader("Índice Real")
 st.markdown("""
-El índice real es el precio de un bien, servicio o título en el mercado, teniendo en cuenta todos los elementos tangibles e intangibles que afectan al activo
+El índice real es el precio de un bien, servicio o título en el mercado, teniendo en cuenta todos los elementos tangibles e intangibles que afectan al activo.
+""")
+st.subheader("Renta Anual")
+st.markdown("""
+La renta anual es la suma de todos los ingresos que ha recibido una persona a lo largo de un año tras restar aquellos gastos contemplados como deducibles.
 """)
 ###
 
@@ -128,8 +132,8 @@ st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.write("**Gráfica: Índice Nominal - Índice Real**")
 st.line_chart(c, x='FECHA', y=['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
 
-#st.markdown("""**Comparación de la Renta Anual de Indice Nominal y Renta Anual Indice Real**""")
-st.subheader("Comparación de la Renta Anual de Indice Nominal y Renta Anual Indice Real")
+#st.markdown("""**Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real**""")
+st.subheader("Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real")
 df = c.drop(columns = ['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.write("**Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real**")
