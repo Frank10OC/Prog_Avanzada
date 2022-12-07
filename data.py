@@ -48,6 +48,8 @@ def load_data():
     return pd.read_csv(url, sep= ',')
 st.checkbox("Use container width", value=False, key="use_container_width")
 
+st.subheader("Datos")
+
 df = load_data()
 st.write("**Datos generales**")
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
@@ -60,9 +62,8 @@ c=pd.read_csv(url)
 def load_fecha():
     url="https://raw.githubusercontent.com/Frank10OC/ejemplo/main/indices_soberanos_f.csv"
     return pd.read_csv(url, sep= ';')
-dfecha = load_fecha()
 
-st.subheader("Fechas")
+dfecha = load_fecha()
 #st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 #Filtraje de AÑO-MES-DÍA
 st.write("**Datos por filtro de fecha**")
