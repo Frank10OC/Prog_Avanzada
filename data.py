@@ -54,7 +54,7 @@ st.dataframe(df, use_container_width=st.session_state.use_container_width)
 url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/data/indices_soberanos.csv"
 c=pd.read_csv(url)
 
-st.markdown("""**Comparación del INDICE_NOMINAL e INDICE_REAL**""") 
+st.markdown("""**Comparación del Índice Nominal e Índice Real**""") 
 df = c.drop(columns = ["RENT_ANUAL_IN","RENT_ANUAL_IR"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.write("**Gráfica: Comparación Índice Nominal - Comparación Índice Real**")
