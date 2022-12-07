@@ -33,15 +33,18 @@ Fuente de datos: (https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberano
 """)
 #boton
 if st.button('Click here') is True:
-       st.markdown(
-   f”””
-   <style>
-   p {
-   background-image: url('https://i.pinimg.com/originals/9a/19/a9/9a19a9926a7f76eb81c64c8dfed711dd.jpg');
-   }
-   </style>
-   ”””,
-   unsafe_allow_html=True)
+      st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 #IMPORTANDO DATOS
 def load_data():
     url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
