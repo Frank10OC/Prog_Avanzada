@@ -56,6 +56,14 @@ c=pd.read_csv(url)
 
 
 ##################################################################
+#FECHAS
+def load_fecha():
+    url="https://raw.githubusercontent.com/Frank10OC/ejemplo/main/indices_soberanos_f.csv"
+    return pd.read_csv(url, sep= ';')
+dfecha = load_fecha()
+
+st.subheader("Fechas")
+#st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 #Filtraje de AÑO-MES-DÍA
 st.write("**Datos por filtro de fecha**")
 col1, col2, col3 = st.columns(3)
@@ -116,14 +124,7 @@ st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.write("**Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real**")
 st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"]) 
 
-#FECHAS
-def load_fecha():
-    url="https://raw.githubusercontent.com/Frank10OC/ejemplo/main/indices_soberanos_f.csv"
-    return pd.read_csv(url, sep= ';')
-dfecha = load_fecha()
 
-st.subheader("Fechas")
-#st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 
 
 
