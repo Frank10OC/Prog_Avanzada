@@ -71,7 +71,8 @@ def load_fecha():
     url="https://raw.githubusercontent.com/Frank10OC/ejemplo/main/indices_soberanos_f.csv"
     return pd.read_csv(url, sep= ';')
 dfecha = load_fecha()
-st.write("**Fechas**")
+
+st.subheader("Fechas")
 #st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 
 ##################################################################33
@@ -104,13 +105,13 @@ with col3:
 
             
 if (num_filas==1):
-    st.markdown("###### INDICE NOMINAL") 
+    st.markdown("###### Índice Nominal") 
     st.success(df_dia.iloc[0,3])
-    st.markdown("###### Renta Anual de Indice Nominal ") 
+    st.markdown("###### Renta Anual de Índice Nominal ") 
     st.success(df_dia.iloc[0,4]) 
-    st.markdown("###### INDICE REAL") 
+    st.markdown("###### Índice Real") 
     st.success(df_dia.iloc[0,5]) 
-    st.markdown("###### Renta Anual Indice Real") 
+    st.markdown("###### Renta Anual de Índice Real") 
     st.success(df_dia.iloc[0,6])
 else:
     st.error("No hay datos de la fecha") 
