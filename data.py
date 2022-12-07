@@ -30,13 +30,15 @@ elaborado por el Ministerio de Economía y Finanzas del Perú (MEF).
 
 Fuente de datos: (https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberanos-2010-2022)
 
----
 """)
 #IMPORTANDO DATOS
 def load_data():
     url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
     return pd.read_csv(url, sep= ',')
 st.checkbox("Use container width", value=False, key="use_container_width")
+st.markdown("""
+---
+""")
 
 st.subheader("¿Qué son los Índices Soberanos?")
 st.markdown("""
