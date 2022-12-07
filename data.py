@@ -58,7 +58,7 @@ st.markdown("""**Comparación del Índice Nominal e Índice Real**""")
 df = c.drop(columns = ["RENT_ANUAL_IN","RENT_ANUAL_IR"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.write("**Gráfica: Comparación Índice Nominal - Comparación Índice Real**")
-st.line_chart(c, x='FECHA', y=['INDICE NOMINAL', 'INDICE REAL'])
+st.line_chart(c, x='FECHA', y=['INDICE_NOMINAL', 'INDICE_REAL'])
 
 st.markdown("""**Comparación del Renta Anual de Indice Nominal y Renta Anual Indice Real**""") 
 df = c.drop(columns = ['INDICE_NOMINAL', 'INDICE_REAL'])
