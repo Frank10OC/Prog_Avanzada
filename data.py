@@ -32,6 +32,11 @@ Fuente de datos: (https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberano
 
 ---
 """)
+#IMPORTANDO DATOS
+def load_data():
+    url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
+    return pd.read_csv(url, sep= ',')
+st.checkbox("Use container width", value=False, key="use_container_width")
 
 st.subheader("¿Qué son los Índices Soberanos?")
 st.markdown("""
@@ -56,14 +61,9 @@ La renta anual es la suma de todos los ingresos que ha recibido una persona a lo
 """)
 ###
 
-#IMPORTANDO DATOS
-def load_data():
-    url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
-    return pd.read_csv(url, sep= ',')
-st.checkbox("Use container width", value=False, key="use_container_width")
+
 
 st.subheader("Datos")
-
 df = load_data()
 st.markdown("##### Datos Generales") 
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
