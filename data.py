@@ -41,6 +41,16 @@ la estructura del portafolio igual al valor de mercado de todos los bonos sobera
 valor de mercado total de todos los bonos en soles nominales (o VAC) en circulación.
 """)
 
+###
+st.subheader("Índice Nominal")
+st.markdown("""
+El índice nominal de una acción es el precio de una acción en el momento de constituir de una compañía.
+""")
+st.subheader("Índice Real")
+st.markdown("""
+El índice real es el precio de un bien, servicio o título en el mercado, teniendo en cuenta todos los elementos tangibles e intangibles que afectan al activo
+""")
+###
 
 #IMPORTANDO DATOS
 def load_data():
@@ -52,7 +62,6 @@ st.subheader("Datos")
 
 df = load_data()
 st.markdown("##### Datos Generales") 
-#st.write("**Datos generales**")
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
 c=pd.read_csv(url)
@@ -67,7 +76,6 @@ def load_fecha():
 dfecha = load_fecha()
 #st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 #Filtraje de AÑO-MES-DÍA
-#st.write("**Datos por filtro de fecha**")
 st.markdown("##### Datos por filtro de fecha") 
 col1, col2, col3 = st.columns(3)
 
