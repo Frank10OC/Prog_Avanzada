@@ -72,7 +72,7 @@ def load_fecha():
     return pd.read_csv(url, sep= ';')
 dfecha = load_fecha()
 st.write("**Fechas**")
-st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
+#st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 
 ##################################################################33
 #Filtraje de AÑO-MES-DÍA
