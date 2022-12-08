@@ -18,17 +18,10 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:50px;">{"Índices Soberanos 201
 st.image("https://diariocorreo.pe/resizer/Fc7YLo9pXk9ykDycNAg8OkQ58LE=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/KXKXRKMB7NGKLE3ASDKUGPVDRI.jpg", width=600)
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Miembros del equipo"}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"""
-- Palacios Ninahuanca, Ninoska
-- Orozco Chupos, Frank
-- Quispe Laura, Jhorch
-- Parillo Sanchez, Yassmin Diana"""}</h1>', unsafe_allow_html=True)
-st.markdown("""
-- Palacios Ninahuanca, Ninoska
-- Orozco Chupos, Frank
-- Quispe Laura, Jhorch
-- Parillo Sanchez, Yassmin Diana
-""")
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"- Palacios Ninahuanca, Ninoska"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"- Orozco Chupos, Frank"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"- Quispe Laura, Jhorch"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"- Parillo Sanchez, Yassmin Diana"}</h1>', unsafe_allow_html=True)
 
 st.markdown("""
 ---
