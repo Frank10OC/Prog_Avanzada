@@ -34,14 +34,10 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"- Orozco Chupos, Frank
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"- Quispe Laura, Jhorch"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"- Parillo Sanchez, Yassmin Diana"}</h1>', unsafe_allow_html=True)
 
-st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"""
----
-La información contenida en esta página web permite acceder al Dataset “Índices Soberanos 2010 - 2022” 
-elaborado por el Ministerio de Economía y Finanzas del Perú (MEF).
-
-Fuente de datos: (https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberanos-2010-2022)
-
-"""}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"---"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"""La información contenida en esta página web permite acceder al Dataset “Índices Soberanos 2010 - 2022” 
+elaborado por el Ministerio de Economía y Finanzas del Perú (MEF)."""}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Fuente de datos: (https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberanos-2010-2022)"}</h1>', unsafe_allow_html=True)
      
 #IMPORTANDO DATOS
 def load_data():
