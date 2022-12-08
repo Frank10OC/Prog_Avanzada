@@ -24,7 +24,7 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"""
 - Orozco Chupos, Frank
 - Quispe Laura, Jhorch
 - Parillo Sanchez, Yassmin Diana
-"""unsafe_allow_html=True)
+""",unsafe_allow_html=True)
 
 st.markdown("""
 ---
