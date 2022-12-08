@@ -50,7 +50,7 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"¿Qué son los Índice
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Es el conjunto de datos que replica el rendimiento de una crtera compuesta en su totaludad de bonos nominales (o VAC) emitidos por el Tesoro que se encuentren vigentes, siendo la participacoión de cada tipo de bono en la estructura del portafolio igual al valor de mercado de todos los bonos soberanos de ese tipo respecto al valor de mercado total de todos los bonos en soles nominales (o VAC) en circulación."}</h1>', unsafe_allow_html=True)
 
 ###
-st.subheader("Índice Nominal")
+st.subheader(f'<h1 style="color:#fafdfa;font-size:30px;">{"Índice Nominal"}</h1>', unsafe_allow_html=True)
 st.markdown("""
 El índice nominal de una acción es el precio de una acción en el momento de constituir de una compañía.
 """)
