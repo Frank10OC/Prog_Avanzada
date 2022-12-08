@@ -54,9 +54,8 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Índice Nominal"}</h1>
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"""El índice nominal de una acción es el precio de una acción en el momento de constituir de una compañía."""}</h1>', unsafe_allow_html=True)
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Índice Real"}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"""
-El índice real es el precio de un bien, servicio o título en el mercado, teniendo en cuenta todos los elementos tangibles e intangibles que afectan al activo.
-"""</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"""El índice real es el precio de un bien, servicio o título en el mercado, teniendo en cuenta todos los elementos tangibles e intangibles que afectan al activo.
+"""}</h1>', unsafe_allow_html=True)
 st.subheader("Renta Anual")
 st.markdown("""
 La renta anual es la suma de todos los ingresos que ha recibido una persona a lo largo de un año tras restar aquellos gastos contemplados como deducibles.
