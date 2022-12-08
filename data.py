@@ -50,14 +50,13 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"¿Qué son los Índice
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Es el conjunto de datos que replica el rendimiento de una crtera compuesta en su totaludad de bonos nominales (o VAC) emitidos por el Tesoro que se encuentren vigentes, siendo la participacoión de cada tipo de bono en la estructura del portafolio igual al valor de mercado de todos los bonos soberanos de ese tipo respecto al valor de mercado total de todos los bonos en soles nominales (o VAC) en circulación."}</h1>', unsafe_allow_html=True)
 
 ###
-st.subheader(f'<h1 style="color:#fafdfa;font-size:30px;">{"Índice Nominal"}</h1>', unsafe_allow_html=True)
-st.markdown("""
-El índice nominal de una acción es el precio de una acción en el momento de constituir de una compañía.
-""")
-st.subheader("Índice Real")
-st.markdown("""
+st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Índice Nominal"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"""El índice nominal de una acción es el precio de una acción en el momento de constituir de una compañía."""}</h1>', unsafe_allow_html=True)
+
+st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Índice Real"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"""
 El índice real es el precio de un bien, servicio o título en el mercado, teniendo en cuenta todos los elementos tangibles e intangibles que afectan al activo.
-""")
+"""</h1>', unsafe_allow_html=True)
 st.subheader("Renta Anual")
 st.markdown("""
 La renta anual es la suma de todos los ingresos que ha recibido una persona a lo largo de un año tras restar aquellos gastos contemplados como deducibles.
