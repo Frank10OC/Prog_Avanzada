@@ -1,8 +1,19 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
-
-
+#color de pagina
+st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://img.freepik.com/vector-premium/fondo-oscuro-textura-tela_448617-61.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 #####
 col1, col2 = st.columns(2)
 
@@ -17,11 +28,11 @@ with col2:
 st.markdown(f'<h1 style="color:#fafdfa;font-size:50px;">{"Índices Soberanos 2010 - 2022"}</h1>', unsafe_allow_html=True)
 st.image("https://diariocorreo.pe/resizer/Fc7YLo9pXk9ykDycNAg8OkQ58LE=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/KXKXRKMB7NGKLE3ASDKUGPVDRI.jpg", width=600)
 
-st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Miembros del equipo"}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"- Palacios Ninahuanca, Ninoska"}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"- Orozco Chupos, Frank"}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"- Quispe Laura, Jhorch"}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"- Parillo Sanchez, Yassmin Diana"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Miembros del equipo"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:18px;">{"- Palacios Ninahuanca, Ninoska"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:18px;">{"- Orozco Chupos, Frank"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:18px;">{"- Quispe Laura, Jhorch"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:18px;">{"- Parillo Sanchez, Yassmin Diana"}</h1>', unsafe_allow_html=True)
 
 st.markdown("""
 ---
@@ -31,20 +42,6 @@ elaborado por el Ministerio de Economía y Finanzas del Perú (MEF).
 Fuente de datos: (https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberanos-2010-2022)
 
 """)
-#boton
-if st.button('Click here') is True:
-      st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background-image: url("https://img.freepik.com/vector-premium/fondo-oscuro-textura-tela_448617-61.jpg");
-             background-attachment: fixed;
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
      
 #IMPORTANDO DATOS
 def load_data():
