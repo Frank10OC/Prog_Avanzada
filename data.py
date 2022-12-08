@@ -32,7 +32,7 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:25px;">{"Miembros del equipo"}<
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"- Palacios Ninahuanca, Ninoska"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"- Orozco Chupos, Frank"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"- Quispe Laura, Jhorch"}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"- Parillo Sanchez, Yassmin Diana"}</h1>', unsafe_allow_html=False)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"- Parillo Sanchez, Yassmin Diana"}</h1>', unsafe_allow_html=True)
 
 st.markdown("---")
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"La información contenida en esta página web permite acceder al Dataset “Índices Soberanos 2010 - 2022” elaborado por el Ministerio de Economía y Finanzas del Perú (MEF)."""}</h1>', unsafe_allow_html=True)
@@ -46,14 +46,8 @@ st.checkbox("Use container width", value=False, key="use_container_width")
 st.markdown("""
 ---
 """)
-
-st.subheader("¿Qué son los Índices Soberanos?")
-st.markdown("""
-Es el conjunto de datos que replica el rendimiento de una crtera compuesta en su totaludad de bonos nominales
-(o VAC) emitidos por el Tesoro que se encuentren vigentes, siendo la participacoión de cada tipo de bono en
-la estructura del portafolio igual al valor de mercado de todos los bonos soberanos de ese tipo respecto al 
-valor de mercado total de todos los bonos en soles nominales (o VAC) en circulación.
-""")
+st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"¿Qué son los Índices Soberanos?"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Es el conjunto de datos que replica el rendimiento de una crtera compuesta en su totaludad de bonos nominales (o VAC) emitidos por el Tesoro que se encuentren vigentes, siendo la participacoión de cada tipo de bono en la estructura del portafolio igual al valor de mercado de todos los bonos soberanos de ese tipo respecto al valor de mercado total de todos los bonos en soles nominales (o VAC) en circulación."}</h1>', unsafe_allow_html=True)
 
 ###
 st.subheader("Índice Nominal")
