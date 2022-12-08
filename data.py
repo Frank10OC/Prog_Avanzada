@@ -18,13 +18,13 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:50px;">{"Índices Soberanos 201
 st.title('Índices Soberanos 2010 - 2022')
 st.image("https://diariocorreo.pe/resizer/Fc7YLo9pXk9ykDycNAg8OkQ58LE=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/KXKXRKMB7NGKLE3ASDKUGPVDRI.jpg", width=600)
 
-st.subheader("Miembros del equipo")
-st.markdown("""
+st.subheader(f'<h1 style="color:#fafdfa;font-size:20px;">{"Miembros del equipo", unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"""
 - Palacios Ninahuanca, Ninoska
 - Orozco Chupos, Frank
 - Quispe Laura, Jhorch
 - Parillo Sanchez, Yassmin Diana
-""")
+"""unsafe_allow_html=True)
 
 st.markdown("""
 ---
