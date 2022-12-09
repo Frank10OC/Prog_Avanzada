@@ -207,6 +207,7 @@ st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDIC
 
 st.markdown("---")
 st.markdown("___")
+st.markdown("===")
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Colaboradores:"}</h1>', unsafe_allow_html=True)
 col1, col2, col3, col4= st.columns(4)
 
