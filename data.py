@@ -141,18 +141,18 @@ st.latex(r'''
     W_{i;(f)} =
     \frac{Q_{i;(f)} . P_{i;(f)}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(f)} \rbrack}
     ''')
-\section{Ejemplos}
- 
-\begin{example}[label={ex:serie}]{La serie geométrica}
- Se define la serie geométrica como:
- 
- \begin{equation*}
-  a + ar + ar^2 + \ldots + ar^n
- \end{equation*}
- 
-\end{example}
- 
-En el Ejemplo \ref{ex:serie}
+st.latex(r'''
+    \section{Ejemplos}
+    \begin{example}[label={ex:serie}]{La serie geométrica}
+    Se define la serie geométrica como:
+     \begin{equation*}
+      a + ar + ar^2 + \ldots + ar^n
+     \end{equation*}
+    \end{example}
+    En el Ejemplo \ref{ex:serie}
+    ''')
+         
+
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rendimiento Total Diario del Índice"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"El indicador de rendimiento es el rendimiento total diario, el cual considera los movimientos del precio de los valores dentro del Índice, las cobranzas de cupones y de amortizaciones. Es calculado de la siguiente manera:"}</h1>', unsafe_allow_html=True)
