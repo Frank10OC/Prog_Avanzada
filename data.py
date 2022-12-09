@@ -144,7 +144,7 @@ st.latex(r'''
     W_{i;(f)} =
     \frac{Q_{i;(f)} . P_{i;(f)}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(f)} \rbrack}
     ''')
-st.latex(\colorbox{White}{ r'''
+st.latex( r'''
     
     \sum_{\mathclap{i}} x_{n}
     \textstyle\sum_{i=1}^n
@@ -152,7 +152,7 @@ st.latex(\colorbox{White}{ r'''
     \sum_{i}^{n} =
     a \left(\frac{1-r^{n}}{1-r}\right)
     
-    '''}.\\)
+    ''')
 st.info(st.latex(r'''
             W_{i;(f)} =
             \frac{Q_{i;(f)} . P_{i;(f)}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(f)} \rbrack}
