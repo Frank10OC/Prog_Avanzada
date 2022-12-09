@@ -209,7 +209,7 @@ st.markdown("---")
 st.markdown("___")
 st.markdown("===")
 
-st.image("https://www.libreriaarlekin.es/img/cms/Separador-texto-blog.png", width=900)
+st.image("https://images.vexels.com/media/users/3/132477/isolated/preview/3b36d6c1705c1902d34a84ba17ee531d-divisor-de-puntos-de-lineas-diminutas.png", width=900)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Colaboradores:"}</h1>', unsafe_allow_html=True)
 col1, col2, col3, col4= st.columns(4)
 
