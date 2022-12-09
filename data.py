@@ -153,7 +153,11 @@ st.latex(\colorbox{White}{ r'''
     a \left(\frac{1-r^{n}}{1-r}\right)
     
     '''}.\\)
-
+st.info(st.latex(r'''
+            W_{i;(f)} =
+            \frac{Q_{i;(f)} . P_{i;(f)}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(f)} \rbrack}
+    ''')
+       ) 
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real"}</h1>', unsafe_allow_html=True)
 df = c.drop(columns = ["ÍNDICE NOMINAL", "ÍNDICE REAL"])
