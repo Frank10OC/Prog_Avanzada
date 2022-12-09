@@ -208,7 +208,7 @@ st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDIC
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{""}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{""}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{""}</h1>', unsafe_allow_html=True)
-st.markdown(\n)
+st.markdown("\n")
 col1, col2 = st.columns(2)
 with col1:
    st.image("https://facien.cayetano.edu.pe/images/documentacion/noticias/logos/logotipo_Ciencias.png", width=200)
