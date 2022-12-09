@@ -215,12 +215,19 @@ with col2:
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Colaboradores:"}</h1>', unsafe_allow_html=True)
 col1, col2, col3, col4= st.columns(4)
 with col1:
-   st.image("Nino.jpg", caption="Ninoska Palacios", width=150) 
+   st.image("Nino.jpg", width=150)
+   st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Palacios Ninahuanca, Ninoska"}</h1>', unsafe_allow_html=True)
 with col2:
-   st.image("Frank.jpg", caption="Frank Orozco", width=150)
+   st.image("Frank.jpg" , width=150)
+   st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Orozco Chupos, Frank"}</h1>', unsafe_allow_html=True)
 with col3:   
-   st.image("Jhorch.jpg", caption="Jhorch Quispe", width=150)
+   st.image("Jhorch.jpg", width=150)
+   st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Quispe Laura, Jhorch"}</h1>', unsafe_allow_html=True)
 with col4:
    st.image("Yass.jpg", caption="Yassmin Parillo", width=150)
+   st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Parillo Sánchez, Yassmin"}</h1>', unsafe_allow_html=True)  
+  
+
+
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Curso:"}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Programación Avanzada - 2022-2"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Programación Avanzada - 2022-2"}</h1>', unsafe_allow_html=True)
