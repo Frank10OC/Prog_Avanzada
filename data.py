@@ -143,7 +143,7 @@ st.latex(r'''
     ''')
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rendimiento Total Diario del Índice"}</h1>', unsafe_allow_html=True)
 st.latex(r'''
-   RTD_{t} =
+    RTD_{t} =
     \lbrack\frac{\textstyle\sum_{i}^n \lbrack Q_{i;t(f) . P_{i;(t)} + S_{i;(t)}\rbrack}{\textstyle\sum_{i}^n \lbrack Q_{f} . P_{i;(t-1)} + S_{i;(t-1)}\rbrack -1\rbrack}
     ''')
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Valor del Índice"}</h1>', unsafe_allow_html=True)
