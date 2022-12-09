@@ -142,7 +142,7 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Valor del Índice"}</h
 
 st.latex(r'''
     W_{i;(f)} =
-    \frac{Q_{i;(f) \cdot P_{i;(f)}}{\sum_{n}^{i} [Q_{i;(f) \cdot P_{i;(f)}]}
+    \cfrac{Q_{i;(f)}.P_{i;(f)}}{\sum_{n}^{i} [Q_{i;(f) \cdot P_{i;(f)}]}
     ''')
 
 
