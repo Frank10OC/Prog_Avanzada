@@ -151,8 +151,7 @@ st.latex(r'''
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Valor del Índice"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"El valor del Índice es calculado diariamente de la siguiente manera:"}</h1>', unsafe_allow_html=True)
 st.latex(r'''
-    Valor" "del Índice_{(día t)} =
-    Valor del Índice_{(día t-1)} * (1+RTD_{t})}
+    Valordel Índice_{(día t)} = Valor del Índice_{(día t-1)} * (1+RTD_{t})}
     ''')
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Cálculo del Índice del Tesoro Real"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rendimiento por precio"}</h1>', unsafe_allow_html=True)
@@ -196,7 +195,7 @@ st.latex(r'''
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Valor del Índice del Tesoro real"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Se obtiene así:"}</h1>', unsafe_allow_html=True)
 st.latex(r'''
-    Valor del Índice_{(t)}=Valor del Índice_{(t-1)}*(1+RTP_{(T)}
+    Valor del Índice_{(t)}=Valor del Índice_{(t-1)}*(1+RTP_{(t)}
     ''')
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real"}</h1>', unsafe_allow_html=True)
 df = c.drop(columns = ["ÍNDICE NOMINAL", "ÍNDICE REAL"])
