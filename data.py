@@ -197,6 +197,7 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Valor del Índice del 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Se obtiene así:"}</h1>', unsafe_allow_html=True)
 st.latex(r'''
     Valor del Índice_{(t)}=Valor del Índice_{(t-1)}*(1+RTP_{(T)}
+    ''')
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real"}</h1>', unsafe_allow_html=True)
 df = c.drop(columns = ["ÍNDICE NOMINAL", "ÍNDICE REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
