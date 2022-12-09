@@ -48,7 +48,7 @@ st.markdown("""
 ---
 """)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"¿Qué son los Índices Soberanos?"}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Los índices son números que reflejan la variación relativa de un precio o de un valor sobre un año base. Es el conjunto de datos que replica el rendimiento de una cartera compuesta en su totalidad de bonos (o VAC) emitidos por el Tesoro que se encuentren vigentes, siendo la participación de cada tipo de bono en la estructura del portafolio igual al valor de mercado de todos los bonos soberanos de ese tipo respecto al valor de mercado total de todos los bonos en soles nominales (o VAC) en circulación."}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Los índices son números que reflejan la variación relativa de un precio o de un valor sobre un año base. En tanto, un índice soberano o índice de bono soberano es una medida consolidada del comportamiento observado de un grupo de bonos durante un determinado periodo. Es el conjunto de datos que replica el rendimiento de una cartera compuesta en su totalidad de bonos (o VAC) emitidos por el Tesoro que se encuentren vigentes, siendo la participación de cada tipo de bono en la estructura del portafolio igual al valor de mercado de todos los bonos soberanos de ese tipo respecto al valor de mercado total de todos los bonos en soles nominales (o VAC) en circulación."}</h1>', unsafe_allow_html=True)
 
 ###
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Índice Nominal"}</h1>', unsafe_allow_html=True)
@@ -132,14 +132,13 @@ else:
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación del Índice Nominal e Índice Real"}</h1>', unsafe_allow_html=True)
 df = c.drop(columns = ["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
-st.write("**Gráfica: Índice Nominal - Índice Real**")
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Gráfica: Índice Nominal - Índice Real"}</h1>', unsafe_allow_html=True)
 st.line_chart(c, x='FECHA', y=['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real"}</h1>', unsafe_allow_html=True)
 df = c.drop(columns = ['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
+df = c.drop(columns = ['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
-st.write("**Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real**")
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real"}</h1>', unsafe_allow_html=True)
 st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"]) 
 
