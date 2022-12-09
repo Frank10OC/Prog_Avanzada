@@ -130,15 +130,24 @@ else:
 
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación del Índice Nominal e Índice Real"}</h1>', unsafe_allow_html=True)
-#df = c.drop(columns = ["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"])
-df = c.drop(columns = ['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
+df = c.drop(columns = ["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Gráfica: Índice Nominal - Índice Real"}</h1>', unsafe_allow_html=True)
 st.line_chart(c, x='FECHA', y=['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
+st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Cálculo del Índice del Tesoro Nominal"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Ponderaciones de los Bonos Elegibles"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"En cada fecha de rebalanceo, los bonos soberanos están sujetos a los criterios de elegibilidad. Una vez se determinen los bonos elegibles, se calculan las ponderaciones de cada uno de estos bonos dentro del Índice, estas ponderaciones son vigentes hasta la siguiente fecha de rebalanceo. Las ponderaciones son calculadas de la siguiente manera:"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Rendimiento Total Diario del Índice"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Valor del Índice"}</h1>', unsafe_allow_html=True)
+st.latex(r'''''')
+st.latex(r'''
+    W_{i;(f)} =
+    \frac{Q_{i;(f) \cdot P_{i;(f)}}{\sum_{n}^{i} [Q_{i;(f) \cdot P_{i;(f)}]}
+    ''')
+
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real"}</h1>', unsafe_allow_html=True)
-#df = c.drop(columns = ['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
-df = c.drop(columns = ["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"])
+df = c.drop(columns = ["ÍNDICE NOMINAL", "ÍNDICE REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real"}</h1>', unsafe_allow_html=True)
 st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"]) 
@@ -151,4 +160,6 @@ st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDIC
 #from PIL import Image
 #image = Image.open('Yass.jpg')
 #st.image(image, caption='Sunrise by the mountains')
+#   st.image("https://www.cayetano.edu.pe/cayetano/images/2018/Logo_Oficial.png", width=200)
+#st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 ####
