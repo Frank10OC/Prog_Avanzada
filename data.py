@@ -90,7 +90,7 @@ with col1:
    fecha_año = np.sort(dfecha['AÑO'].dropna().unique())
    #Seleccion del AÑO
    a=st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Selecciona un año"}</h1>', unsafe_allow_html=True)
-   opcion_año = st.selectbox(a, fecha_año)
+   opcion_año = st.selectbox(" ", fecha_año)
    df_año = dfecha[dfecha['AÑO'] == opcion_año]
    num_filas = len(df_año.axes[0]) 
 
