@@ -144,8 +144,8 @@ st.latex(r'''
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rendimiento Total Diario del Índice"}</h1>', unsafe_allow_html=True)
 st.latex(r'''
     RTD_{(t)} =
-    \Bigg(
-    \lbrack \frac{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(t)} + S_{i;(t)} \rbrack}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(t-1)} + S_{i;(t-1)} \rbrack} -1 \rbrack \Bigg]
+    \Bigg[
+    \frac{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(t)} + S_{i;(t)} \rbrack}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(t-1)} + S_{i;(t-1)} \rbrack} -1 \Bigg]
     ''')
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Valor del Índice"}</h1>', unsafe_allow_html=True)
 st.image("pond.jpg", width=200)
