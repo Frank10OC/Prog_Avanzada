@@ -145,11 +145,13 @@ st.latex(r'''
     \frac{Q_{i;(f)} . P_{i;(f)}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(f)} \rbrack}
     ''')
 st.latex(r'''
+    \colorbox{White}{
     \sum_{\mathclap{i}} x_{n}
     \textstyle\sum_{i=1}^n
     a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
     \sum_{i}^{n} =
     a \left(\frac{1-r^{n}}{1-r}\right)
+    }.\\
     ''')
 
 
