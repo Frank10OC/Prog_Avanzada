@@ -145,9 +145,10 @@ st.latex(r'''
     \section{Ejemplos}
     \begin{example}[label={ex:serie}]{La serie geométrica}
     Se define la serie geométrica como:
-     \begin{equation*}
-      a + ar + ar^2 + \ldots + ar^n
-     \end{equation*}
+        \begin{equation*}
+            W_{i;(f)} =
+            \frac{Q_{i;(f)} . P_{i;(f)}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(f)} \rbrack}
+        \end{equation*}
     \end{example}
     En el Ejemplo \ref{ex:serie}
     ''')
