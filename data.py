@@ -203,13 +203,3 @@ st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real"}</h1>', unsafe_allow_html=True)
 st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"]) 
 
-
-
-
-
-#### IMG ####
-#from PIL import Image
-#image = Image.open('Yass.jpg')
-#st.image(image, caption='Sunrise by the mountains')
-#   st.image("https://www.cayetano.edu.pe/cayetano/images/2018/Logo_Oficial.png", width=200)
-#st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
