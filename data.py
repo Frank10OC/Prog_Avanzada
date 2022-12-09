@@ -224,10 +224,12 @@ with col3:
    st.image("Jhorch.jpg", width=150)
    st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Quispe Laura, Jhorch"}</h1>', unsafe_allow_html=True)
 with col4:
-   st.image("Yass.jpg", caption="Yassmin Parillo", width=150)
+   st.image("Yass.jpg" , width=150)
    st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Parillo Sánchez, Yassmin"}</h1>', unsafe_allow_html=True)  
   
 
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Curso:"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Programación Avanzada - 2022-2"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Profesor:"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Montalvo García, Peter"}</h1>', unsafe_allow_html=True)
