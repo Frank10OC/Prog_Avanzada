@@ -140,10 +140,10 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"En cada fecha de rebal
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Rendimiento Total Diario del Índice"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Valor del Índice"}</h1>', unsafe_allow_html=True)
 
-st.latex(r'''
+st.latex(r"
     W_{i;(f)} =
     \cfrac{Q_{i;(f)}.P_{i;(f)}}{\sum_{n}^{i} [Q_{i;(f) \cdot P_{i;(f)}]}
-    ''')
+    ")
 
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real"}</h1>', unsafe_allow_html=True)
