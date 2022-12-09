@@ -28,7 +28,7 @@ with col2:
 st.markdown(f'<h1 style="color:#fafdfa;font-size:50px;">{"Índices Soberanos 2010 - 2022"}</h1>', unsafe_allow_html=True)
 st.image("https://diariocorreo.pe/resizer/Fc7YLo9pXk9ykDycNAg8OkQ58LE=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/KXKXRKMB7NGKLE3ASDKUGPVDRI.jpg", width=600)
 
-st.markdown(f'<h1 style="color:#fafdfa;font-size:25px;">{"Miembros del equipo"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Miembros del equipo"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"- Palacios Ninahuanca, Ninoska"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"- Orozco Chupos, Frank"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"- Quispe Laura, Jhorch"}</h1>', unsafe_allow_html=True)
@@ -62,9 +62,11 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"""La renta anual es la
 
 
 
-st.subheader("Datos")
+#st.subheader("Datos")
+st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Datos"}</h1>', unsafe_allow_html=True)
 df = load_data()
-st.markdown("##### Datos Generales") 
+#st.markdown("##### Datos Generales")
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Datos Generales"}</h1>', unsafe_allow_html=True)
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
 c=pd.read_csv(url)
@@ -79,14 +81,16 @@ def load_fecha():
 dfecha = load_fecha()
 #st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 #Filtraje de AÑO-MES-DÍA
-st.markdown("##### Datos por filtro de fecha") 
+#st.markdown("##### Datos por filtro de fecha")
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Datos por filtro de fecha"}</h1>', unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
 
 with col1:
    #Construccion del set/list de AÑO (Valores unicos sin NA)
    fecha_año = np.sort(dfecha['AÑO'].dropna().unique())
    #Seleccion del AÑO
-   opcion_año = st.selectbox('Selecciona un año', fecha_año)
+   a=st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Selecciona un año"}</h1>', unsafe_allow_html=True)
+   opcion_año = st.selectbox(a, fecha_año)
    df_año = dfecha[dfecha['AÑO'] == opcion_año]
    num_filas = len(df_año.axes[0]) 
 
