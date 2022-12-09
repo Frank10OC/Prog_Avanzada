@@ -201,5 +201,4 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación de la Ren
 df = c.drop(columns = ["ÍNDICE NOMINAL", "ÍNDICE REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real"}</h1>', unsafe_allow_html=True)
-st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"]) 
-
+st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"])
