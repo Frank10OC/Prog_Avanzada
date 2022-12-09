@@ -209,7 +209,7 @@ st.markdown("---")
 st.markdown("___")
 st.markdown("===")
 
-st.image("https://i.imgur.com/SSEvdmh.png", width=900)
+st.image("https://www.cayetano.edu.pe/cayetano/images/2018/Logo_Oficial.png", width=500)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Colaboradores:"}</h1>', unsafe_allow_html=True)
 col1, col2, col3, col4= st.columns(4)
 
