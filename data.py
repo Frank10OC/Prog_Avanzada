@@ -202,3 +202,19 @@ df = c.drop(columns = ["ÍNDICE NOMINAL", "ÍNDICE REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real"}</h1>', unsafe_allow_html=True)
 st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"])
+
+
+
+st.markdown("---")
+st.markdown("___")
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Colaboradores:"}</h1>', unsafe_allow_html=True)
+col1, col2, col3, col4= st.columns(4)
+
+with col1:
+   st.image(Nino.jpg, caption=Ninoska Palacios, width=150) 
+with col2:
+   st.image(Frank.jpg, caption=Frank Orozco, width=150)
+with col3:   
+   st.image(Jhorch.jpg, caption=Jhorch Quispe, width=150)
+with col4:
+   st.image(Yass.jpg, caption=Yassmin Parillo, width=150)
