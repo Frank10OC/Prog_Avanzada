@@ -144,15 +144,15 @@ st.latex(r'''
     W_{i;(f)} =
     \frac{Q_{i;(f)} . P_{i;(f)}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(f)} \rbrack}
     ''')
-st.latex(r'''
-    \colorbox{White}{
+st.latex(\colorbox{White}{ r'''
+    
     \sum_{\mathclap{i}} x_{n}
     \textstyle\sum_{i=1}^n
     a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
     \sum_{i}^{n} =
     a \left(\frac{1-r^{n}}{1-r}\right)
-    }.\\
-    ''')
+    
+    '''}.\\)
 
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real"}</h1>', unsafe_allow_html=True)
