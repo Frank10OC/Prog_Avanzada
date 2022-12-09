@@ -113,22 +113,17 @@ with col3:
 if (num_filas==1):
     col1, col2 = st.columns(2)
     with col1:
-      st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Índice Nominal"}</h1>', unsafe_allow_html=True)           
-      #st.markdown("###### Índice Nominal") 
+      st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Índice Nominal"}</h1>', unsafe_allow_html=True)          
       st.success(df_dia.iloc[0,3])
       st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Renta Anual de Índice Nominal"}</h1>', unsafe_allow_html=True)   
-      #st.markdown("###### Renta Anual de Índice Nominal ") 
       st.success(df_dia.iloc[0,4])
     with col2:
-      st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Índice Real"}</h1>', unsafe_allow_html=True)
-      #st.markdown("###### Índice Real") 
+      st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Índice Real"}</h1>', unsafe_allow_html=True)
       st.success(df_dia.iloc[0,5])
       st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Renta Anual de Índice Real"}</h1>', unsafe_allow_html=True)   
-      #st.markdown("###### Renta Anual de Índice Real") 
       st.success(df_dia.iloc[0,6])
 else:
-    #st.error("No hay datos de la fecha")
-    st.error(f'<h1 style="color:#fafdfa;font-size:15px;">{"No hay datos de la fecha"}</h1>', unsafe_allow_html=True)
+    st.error("No hay datos de la fecha")
 
 
 ############################################################################
@@ -136,16 +131,20 @@ else:
 
 #st.markdown("""**Comparación del Índice Nominal e Índice Real**""")
 st.subheader("Comparación del Índice Nominal e Índice Real")
+st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación del Índice Nominal e Índice Real"}</h1>', unsafe_allow_html=True)
 df = c.drop(columns = ["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.write("**Gráfica: Índice Nominal - Índice Real**")
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Gráfica: Índice Nominal - Índice Real"}</h1>', unsafe_allow_html=True)
 st.line_chart(c, x='FECHA', y=['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
 
 #st.markdown("""**Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real**""")
 st.subheader("Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real")
+st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real"}</h1>', unsafe_allow_html=True)
 df = c.drop(columns = ['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.write("**Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real**")
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real"}</h1>', unsafe_allow_html=True)
 st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"]) 
 
 
