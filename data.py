@@ -7,7 +7,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://fondosmil.com/fondo/55292.jpg");
+             background-image: url("https://www.staffcreativa.pe/blog/wp-content/uploads/marca-peru-logo.gif");
              background-attachment: fixed;
              background-size: cover
          }}
