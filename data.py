@@ -139,7 +139,7 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Ponderaciones de los B
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"En cada fecha de rebalanceo, los bonos soberanos están sujetos a los criterios de elegibilidad. Una vez se determinen los bonos elegibles, se calculan las ponderaciones de cada uno de estos bonos dentro del Índice, estas ponderaciones son vigentes hasta la siguiente fecha de rebalanceo. Las ponderaciones son calculadas de la siguiente manera:"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Rendimiento Total Diario del Índice"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Valor del Índice"}</h1>', unsafe_allow_html=True)
-st.latex(r'''''')
+
 st.latex(r'''
     W_{i;(f)} =
     \frac{Q_{i;(f) \cdot P_{i;(f)}}{\sum_{n}^{i} [Q_{i;(f) \cdot P_{i;(f)}]}
