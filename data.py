@@ -152,7 +152,14 @@ st.latex(r'''
     \end{example}
     En el Ejemplo \ref{ex:serie}
     ''')
-         
+st.latex(r'''
+    \begin{equation}
+    \mathrm{W_{i;(f)} =
+    \commentedbox{\left(\mu + \frac{\partial \mu}{\partial P}P\right)t_i \mathrm{d}P}{\small$\mathbf{K}_F$}+ 
+    \commentedbox{\frac{\partial\mu}{\partial\dot{\gamma}}P t_i t_j \mathrm{d}\dot{\gamma}_j}{\small$\mathbf{C}_{-}$} +
+    \commentedbox{\frac{\mu P}{\dot{\gamma}}(\delta{ij}-t_i t_j)\mathrm{d}\dot{\gamma}_j}{\small$\mathbf{C}_{+}$}
+    \end{equation}
+    ''')
 
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rendimiento Total Diario del Índice"}</h1>', unsafe_allow_html=True)
