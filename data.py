@@ -7,7 +7,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://1.bp.blogspot.com/-GLatfJHQ-z0/Tj8FHlmsRLI/AAAAAAAAEhQ/4PVR0xcpnOk/s1600/wallpaper2_celeste.gif");
+             background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/ca/Machu_Picchu%2C_Peru_%282018%29.jpg");
              background-attachment: fixed;
              background-size: cover
          }}
