@@ -142,9 +142,15 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Valor del Índice"}</h
 st.image("pond.jpg", width=200)
 st.latex(r'''
     a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
+    \W_{i;(f)} =
+    \frac{1-r^{n}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} P_{i;(f)} \rbr ack}
+    ''')
+st.latex(r'''
+    a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
     \sum_{k=0}^{n-1} ar^k =
     a \left(\frac{1-r^{n}}{1-r}\right)
     ''')
+
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real"}</h1>', unsafe_allow_html=True)
 df = c.drop(columns = ["ÍNDICE NOMINAL", "ÍNDICE REAL"])
