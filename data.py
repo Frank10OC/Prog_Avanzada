@@ -137,13 +137,18 @@ st.line_chart(c, x='FECHA', y=['ÍNDICE NOMINAL', 'ÍNDICE REAL'])
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Cálculo del Índice del Tesoro Nominal"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Ponderaciones de los Bonos Elegibles"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"En cada fecha de rebalanceo, los bonos soberanos están sujetos a los criterios de elegibilidad. Una vez se determinen los bonos elegibles, se calculan las ponderaciones de cada uno de estos bonos dentro del Índice, estas ponderaciones son vigentes hasta la siguiente fecha de rebalanceo. Las ponderaciones son calculadas de la siguiente manera:"}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Rendimiento Total Diario del Índice"}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Valor del Índice"}</h1>', unsafe_allow_html=True)
-st.image("pond.jpg", width=200)
 st.latex(r'''
     W_{i;(f)} =
     \frac{Q_{i;(f)} . P_{i;(f)}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(f)} \rbrack}
     ''')
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rendimiento Total Diario del Índice"}</h1>', unsafe_allow_html=True)
+st.latex(r'''
+   RTD_{t} =
+    \lbrack\frac{\textstyle\sum_{i}^n \lbrack Q_{i;t(f) . P_{i;(t)} + S_{i;(t)}\rbrack}{\textstyle\sum_{i}^n \lbrack Q_{f} . P_{i;(t-1)} + S_{i;(t-1)}\rbrack -1\rbrack}
+    ''')
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Valor del Índice"}</h1>', unsafe_allow_html=True)
+st.image("pond.jpg", width=200)
+
 st.latex( r'''
     
     \sum_{\mathclap{i}} x_{n}
