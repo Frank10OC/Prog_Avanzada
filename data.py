@@ -1,11 +1,12 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
+
 [theme]
-primaryColor="#fafdfa"
+primaryColor="#F63366"
 backgroundColor="#FFFFFF"
 secondaryBackgroundColor="#F0F2F6"
-textColor="#fafdfa"
+textColor="#262730"
 font="sans serif"
 
 #color de pagina
