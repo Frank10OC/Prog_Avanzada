@@ -142,8 +142,8 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Valor del Índice"}</h
 st.image("pond.jpg", width=200)
 st.latex(r'''
     a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
-    \W_{i;(f)} =
-    \frac{1-r^{n}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} P_{i;(f)} \rbr ack}
+    W_{i;(f)} =
+    \frac{1-r^{n}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} P_{i;(f)} \rbrack}
     ''')
 st.latex(r'''
     a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
