@@ -142,29 +142,61 @@ st.latex(r'''
     \frac{Q_{i;(f)} . P_{i;(f)}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(f)} \rbrack}
     ''')
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rendimiento Total Diario del Índice"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"El indicador de rendimiento es el rendimiento total diario, el cual considera los movimientos del precio de los valores dentro del Índice, las cobranzas de cupones y de amortizaciones. Es calculado de la siguiente manera:"}</h1>', unsafe_allow_html=True)
 st.latex(r'''
     RTD_{(t)} =
     \Bigg[
     \frac{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(t)} + S_{i;(t)} \rbrack}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(t-1)} + S_{i;(t-1)} \rbrack} -1 \Bigg]
     ''')
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Valor del Índice"}</h1>', unsafe_allow_html=True)
-st.image("pond.jpg", width=200)
-
-st.latex( r'''
-    
-    \sum_{\mathclap{i}} x_{n}
-    \textstyle\sum_{i=1}^n
-    a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
-    \sum_{i}^{n} =
-    a \left(\frac{1-r^{n}}{1-r}\right)
-    
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"El valor del Índice es calculado diariamente de la siguiente manera:"}</h1>', unsafe_allow_html=True)
+st.latex(r'''
+    Valor del Índice_{(día t)} =
+    Valor del Índice_{(día t-1)} * (1+RTD_{t})}
     ''')
-st.info(st.latex(r'''
-            W_{i;(f)} =
-            \frac{Q_{i;(f)} . P_{i;(f)}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(f)} \rbrack}
+st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Cálculo del Índice del Tesoro Real"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rendimiento por precio"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Es el rendimiento obtenido por un bono debido a la variación de su precio sucio en el día t con respecto al día t-1, el cual es estimado así:"}</h1>', unsafe_allow_html=True)
+st.latex(r'''
+    Rendimiento por precio =
+    \frac{Precio sucio_{t}-Precio sucio_{t-1}} {Precio sucio_{t-1}}
     ''')
-       ) 
-
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rendimiento por cupón"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Es el rendimiento obtenido por un bono debido al pago de sus cupones en el día t, el cual es calculado así:"}</h1>', unsafe_allow_html=True)
+st.latex(r'''
+    Rendimiento por cupón =
+    \frac{Cupón_{t}} {Precio_{t-1}}
+    ''')
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rendimiento por inflación"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Es el rendimiento obtenido debido a la variación del índice de reajuste diario en el día t con respecto al día t-1, el cual es calculado así:"}</h1>', unsafe_allow_html=True)
+st.latex(r'''
+    Rend. por inflación =
+    \frac{Índice de reajuste diario_{t}-Índice de reajuste diario_{t-1}} {Índice de reajuste diario_{t-1}}
+    ''')
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rendimiento total"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Se obtiene a partir de la sumatoria, para cada bono, del rendimiento por precio, el rendimiento por cupón y el rendimiento por inflación generado."}</h1>', unsafe_allow_html=True)
+st.latex(r'''
+    Rendimiento total=
+    Rend. por precio + Rend. por cupón + Rend. por inflación
+    ''')
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Saldo de caja"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Monto de efectivo generado a partir del pago de cupones recibidos por los tenedores en una fecha determinada."}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Participación de cada bono en los índices"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Para el índice, la participación de cada bono es estimada así:"}</h1>', unsafe_allow_html=True)
+st.latex(r'''
+    p_{i} =
+    \frac{VMB_{i_{(t)}}} {Saldo Caja_{(t)}+\textstyle\sum_{i=1}^n VMB_{i_{(t)}}}
+    ''')
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rendimiento total del índice"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Para el índice VAC, el rendimiento se obtiene así:"}</h1>', unsafe_allow_html=True)
+st.latex(r'''
+    RTP_{(t)} =
+    \sum_{i=1}^N p_{i(t-1)} * RTB_{i(t)}
+    ''')
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Valor del Índice del Tesoro real"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Se obtiene así:"}</h1>', unsafe_allow_html=True)
+st.latex(r'''
+    Valor del Índice_{(t)}=Valor del Índice_{(t-1)}*(1+RTP_{(T)}
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación de la Renta Anual de Índice Nominal y Renta Anual Índice Real"}</h1>', unsafe_allow_html=True)
 df = c.drop(columns = ["ÍNDICE NOMINAL", "ÍNDICE REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
