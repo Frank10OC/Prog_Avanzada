@@ -214,7 +214,6 @@ with col2:
          
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Colaboradores:"}</h1>', unsafe_allow_html=True)
 col1, col2, col3, col4= st.columns(4)
-
 with col1:
    st.image("Nino.jpg", caption="Ninoska Palacios", width=150) 
 with col2:
@@ -223,3 +222,5 @@ with col3:
    st.image("Jhorch.jpg", caption="Jhorch Quispe", width=150)
 with col4:
    st.image("Yass.jpg", caption="Yassmin Parillo", width=150)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Curso:"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Programación Avanzada - 2022-2"}</h1>', unsafe_allow_html=True)
