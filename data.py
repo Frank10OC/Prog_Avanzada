@@ -157,7 +157,7 @@ st.latex(
     \mathrm{W_{i;(f)} =
     \commentedbox{\frac{Q_{i;(f)} . P_{i;(f)}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(f)} \rbrack}
     \end{equation}
-   )
+    )
 
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rendimiento Total Diario del Índice"}</h1>', unsafe_allow_html=True)
