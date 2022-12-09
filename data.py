@@ -90,8 +90,7 @@ with col1:
    #Construccion del set/list de AÑO (Valores unicos sin NA)
    fecha_año = np.sort(dfecha['AÑO'].dropna().unique())
    #Seleccion del AÑO
-   st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Selecciona un año"}</h1>', unsafe_allow_html=True)
-   opcion_año = st.selectbox(fecha_año)
+   opcion_año = st.selectbox('Selecciona un año',fecha_año)
    df_año = dfecha[dfecha['AÑO'] == opcion_año]
    num_filas = len(df_año.axes[0]) 
 
@@ -114,9 +113,11 @@ with col3:
 if (num_filas==1):
     col1, col2 = st.columns(2)
     with col1:
-      st.markdown("###### Índice Nominal") 
-      st.success(df_dia.iloc[0,3]) 
-      st.markdown("###### Renta Anual de Índice Nominal ") 
+      st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Índice Nominal"}</h1>', unsafe_allow_html=True)            
+      #st.markdown("###### Índice Nominal") 
+      st.success(df_dia.iloc[0,3])
+      st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Renta Anual de Índice Nominal"}</h1>', unsafe_allow_html=True)   
+      #st.markdown("###### Renta Anual de Índice Nominal ") 
       st.success(df_dia.iloc[0,4])
     with col2:
       st.markdown("###### Índice Real") 
