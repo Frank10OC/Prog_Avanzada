@@ -2,11 +2,11 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 [theme]
-#primaryColor="#fafdfa"
-#backgroundColor="#FFFFFF"
-#secondaryBackgroundColor="#F0F2F6"
+primaryColor="#fafdfa"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F0F2F6"
 textColor="#fafdfa"
-#font="sans serif"
+font="sans serif"
 
 #color de pagina
 st.markdown(
