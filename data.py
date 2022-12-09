@@ -154,8 +154,8 @@ st.latex(r'''
     ''')
 st.latex(r'''
     \begin{equation}
-    W_{i;(f)} =
-    \commentedbox{\frac{Q_{i;(f)} . P_{i;(f)}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(f)} \rbrack}
+     W_{i;(f)} =
+     \commentedbox{\frac{Q_{i;(f)} . P_{i;(f)}}{\textstyle\sum_{i}^n \lbrack Q_{i;(f)} . P_{i;(f)} \rbrack}
     \end{equation}
     ''')
 
