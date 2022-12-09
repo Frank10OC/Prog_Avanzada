@@ -7,7 +7,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://www.inkaterra.com/blog/wp-content/uploads/2014/07/Machu-Picchu-at-sunrise.jpg");
+             background-image: url("https://azasof.com/blog/wp-content/uploads/2018/03/000182241W.jpg");
              background-attachment: fixed;
              background-size: cover
          }}
