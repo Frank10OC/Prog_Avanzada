@@ -7,7 +7,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://www.staffcreativa.pe/blog/wp-content/uploads/marca-peru-logo.gif");
+             background-image: url("https://1.bp.blogspot.com/-GLatfJHQ-z0/Tj8FHlmsRLI/AAAAAAAAEhQ/4PVR0xcpnOk/s1600/wallpaper2_celeste.gif");
              background-attachment: fixed;
              background-size: cover
          }}
