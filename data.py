@@ -209,6 +209,7 @@ st.markdown("---")
 st.markdown("___")
 st.markdown("===")
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Colaboradores:"}</h1>', unsafe_allow_html=True)
+st.image("https://www.libreriaarlekin.es/img/cms/Separador-texto-blog.png", width=500)
 col1, col2, col3, col4= st.columns(4)
 
 with col1:
