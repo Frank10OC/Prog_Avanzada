@@ -205,13 +205,13 @@ st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDIC
 
 
 
-st.markdown("---")
-st.markdown("___")
-st.markdown("===")
-
-st.image("https://www.cayetano.edu.pe/cayetano/images/2018/Logo_Oficial.png", width=200)
-
-st.image("https://www.cayetano.edu.pe/cayetano/images/2020/ingenieria-ambiental/TIT.png", width=200)
+col1, col2 = st.columns(2)
+with col1:
+   st.image("https://facien.cayetano.edu.pe/images/documentacion/noticias/logos/logotipo_Ciencias.png", width=200)
+with col2:
+   st.image("https://www.cayetano.edu.pe/cayetano/images/2020/ingenieria-ambiental/TIT.png", width=200)
+    
+         
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Colaboradores:"}</h1>', unsafe_allow_html=True)
 col1, col2, col3, col4= st.columns(4)
 
