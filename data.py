@@ -113,19 +113,23 @@ with col3:
 if (num_filas==1):
     col1, col2 = st.columns(2)
     with col1:
-      st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Índice Nominal"}</h1>', unsafe_allow_html=True)            
+      st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Índice Nominal"}</h1>', unsafe_allow_html=True)           
       #st.markdown("###### Índice Nominal") 
       st.success(df_dia.iloc[0,3])
-      st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Renta Anual de Índice Nominal"}</h1>', unsafe_allow_html=True)   
+      st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Renta Anual de Índice Nominal"}</h1>', unsafe_allow_html=True)   
       #st.markdown("###### Renta Anual de Índice Nominal ") 
       st.success(df_dia.iloc[0,4])
     with col2:
-      st.markdown("###### Índice Real") 
-      st.success(df_dia.iloc[0,5]) 
-      st.markdown("###### Renta Anual de Índice Real") 
+      st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Índice Real"}</h1>', unsafe_allow_html=True)
+      #st.markdown("###### Índice Real") 
+      st.success(df_dia.iloc[0,5])
+      st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Renta Anual de Índice Real"}</h1>', unsafe_allow_html=True)   
+      #st.markdown("###### Renta Anual de Índice Real") 
       st.success(df_dia.iloc[0,6])
 else:
-    st.error("No hay datos de la fecha") 
+    #st.error("No hay datos de la fecha")
+    st.error(f'<h1 style="color:#fafdfa;font-size:15px;">{"No hay datos de la fecha"}</h1>', unsafe_allow_html=True)
+
 
 ############################################################################
 
