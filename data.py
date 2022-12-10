@@ -63,10 +63,9 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"La renta anual es la s
 
 
 
-#st.subheader("Datos")
+
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Datos"}</h1>', unsafe_allow_html=True)
 df = load_data()
-#st.markdown("##### Datos Generales")
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Datos Generales"}</h1>', unsafe_allow_html=True)
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
@@ -82,7 +81,7 @@ def load_fecha():
 dfecha = load_fecha()
 #st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
 #Filtraje de AÑO-MES-DÍA
-#st.markdown("##### Datos por filtro de fecha")
+
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Datos por filtro de fecha"}</h1>', unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
 
@@ -202,7 +201,35 @@ df = c.drop(columns = ["ÍNDICE NOMINAL", "ÍNDICE REAL"])
 st.dataframe(df, use_container_width=st.session_state.use_container_width)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Gráfica: Renta Anual de Índice Nominal - Renta Anual de Índice Real"}</h1>', unsafe_allow_html=True)
 st.line_chart(c, x='FECHA', y=["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"])
-
+st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Impuesto a la Renta (IR)"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"El impuesto a la renta es un tributo que se determina anualmente, tiene vigencia del 01 de enero al 31 de diciembre."}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rentas de Capital - Primera Categoría:"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Generadas por el arrendamiento, subarrendamiento o cualquier tipo de cesión de bienes muebles o inmuebles. El pago debes hacerlo tú mismo y corresponde al 6.25% sobre la renta neta (equivalente al 5% sobre la renta bruta)."}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Cálculo del impuesto a la renta de quinta categoría:"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"1. Identifica el monto"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"2. Aplica el impuesto"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"3. Comparael impuesto"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rentas de Capital - Segunda Categoría:"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Corresponde a venta de acciones o valores mobiliarios, intereses por colocación de capitales, regalías, patentes, rentas vitalicias, derechos de llave y otros."}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Cálculo del impuesto a la renta de segunda categoría por venta de inmuebles:"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"1. Determina el costo de adquisición actualizado de tu inmueble"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"2. Determinar la Renta Neta"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"3. Determinación del impuesto"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rentas del Trabajo - Cuarta Categoría:"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Corresponden a servicios prestados de manera independiente de cualquier profesión, ciencia, arte u oficio. También, están aquí los trabajadores del Estado con contrato CAS, los directores, consejeros regionales y regidores municipales. Si estos ingresos se complementan con actividades empresariales o viceversa, el total de la renta que se obtenga se considerará como renta de Tercera Categoría es decir una renta empresarial."}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Cálculo del impuesto a la renta de cuarta categoría:"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"1. Descuenta el 20% de los ingresos percibidos o cobrados durante el año"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"2. Descuenta el valor de 7 UIT"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"3. Aplica la tasa del impuesto por cada tramo de ingresos"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rentas del Trabajo - Quinta Categoría:"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Son los ingresos obtenidos por el trabajo personal prestado en relación de dependencia (planilla), incluidos cargos públicos, tales como sueldos, salarios, asignaciones, gratificaciones, bonificaciones, aguinaldos, comisiones, compensaciones en dinero o en especie, gastos de representación y, en general, toda retribución por servicios personales."}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Cálculo del impuesto a la renta de quinta categoría:"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"1. Suma tus ingresos totales del año y descuéntale 7 UIT"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"2. Descuenta (en caso tengas), el monto de tus gastos deducibles del año (máximo 3 UIT)"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"3. Aplica la tasa del impuesto por cada tramo de ingresos"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Descuenta las retenciones que tu empleador realizó durante el año"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rentas de Fuente Extranjera:"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Provienen de una fuente ubicada fuera del territorio nacional. No se categorizan y se consideran para efectos del Impuesto, siempre que se hayan percibido. Por ejemplo, la renta obtenida por alquilar un inmueble en el extranjero, los intereses obtenidos por certificados de depósitos bancarios de entidades financieras del exterior, la renta obtenida por prestar servicios en el exterior, entre otras."}</h1>', unsafe_allow_html=True)
 
 st.markdown("\n")
 st.markdown("\n")
