@@ -15,7 +15,7 @@ _* Parillo Sanchez, Yassmin Diana_
 _Que cosas necesitas para instalar el software y como instalarlas_
 
 ```
-Da un ejemplo
+Streamlit 11.3.0
 ```
 
 ### Instalación 🔧
