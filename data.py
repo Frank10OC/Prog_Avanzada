@@ -222,9 +222,13 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Descuenta las retencio
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rentas de Fuente Extranjera:"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Provienen de una fuente ubicada fuera del territorio nacional. No se categorizan y se consideran para efectos del Impuesto, siempre que se hayan percibido. Por ejemplo, la renta obtenida por alquilar un inmueble en el extranjero, los intereses obtenidos por certificados de depósitos bancarios de entidades financieras del exterior, la renta obtenida por prestar servicios en el exterior, entre otras."}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Bibliografía"}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"* MEF. (2017). Manual de Cálculo de los Índices del Tesoro Nominal y Real (VAC). MEF.gob."}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"MEF. (2017). Manual de Cálculo de los Índices del Tesoro Nominal y Real (VAC). MEF.gob."}</h1>', unsafe_allow_html=True)
+st.write("[https://www.mef.gob.pe/contenidos/deuda_publ/documentos/Manual_calculo_indices_tesoro_nominal_real_VAC.pdf](https://www.mef.gob.pe/contenidos/deuda_publ/documentos/Manual_calculo_indices_tesoro_nominal_real_VAC.pdf)")    
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Impuesto a la Renta (IR). (2022, 11 diciembre). Orientación - Superintendencia Nacional de Aduanas y de Administración Tributaria - Gobierno del Perú."}</h1>', unsafe_allow_html=True)
+st.write("[https://www.gob.pe/664-impuesto-a-la-renta-ir](https://www.gob.pe/664-impuesto-a-la-renta-ir)")    
 
-st.write("\t\t[https://www.mef.gob.pe/contenidos/deuda_publ/documentos/Manual_calculo_indices_tesoro_nominal_real_VAC.pdf](https://www.mef.gob.pe/contenidos/deuda_publ/documentos/Manual_calculo_indices_tesoro_nominal_real_VAC.pdf)")    
+
+
 st.markdown("\n")
 st.markdown("\n")
 st.markdown("\n")
