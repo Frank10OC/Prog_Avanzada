@@ -71,17 +71,13 @@ st.dataframe(df, use_container_width=st.session_state.use_container_width)
 url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
 c=pd.read_csv(url)
 
-
-##################################################################
 #FECHAS
 def load_fecha():
     url="https://raw.githubusercontent.com/Frank10OC/ejemplo/main/indices_soberanos_f.csv"
     return pd.read_csv(url, sep= ';')
-
 dfecha = load_fecha()
-#st.dataframe(dfecha, use_container_width=st.session_state.use_container_width)
-#Filtraje de AÑO-MES-DÍA
 
+#Filtraje de AÑO-MES-DÍA
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Datos por filtro de fecha"}</h1>', unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
 
@@ -92,7 +88,6 @@ with col1:
    opcion_año = st.selectbox('Selecciona un año',fecha_año)
    df_año = dfecha[dfecha['AÑO'] == opcion_año]
    num_filas = len(df_año.axes[0]) 
-
 with col2:
    #Construccion del set/list de MES (Valores unicos sin NA)
    fecha_mes =(df_año['MES'].dropna().unique())
@@ -108,7 +103,7 @@ with col3:
    df_dia = df_mes[df_mes['DÍA'] == opcion_dia]
    num_filas = len(df_dia.axes[0])
    
-#Respuesta del filtraje de fechas           
+#RESPUESTA DEL FILTRAJE DE FECHAS           
 if (num_filas==1):
     col1, col2 = st.columns(2)
     with col1:
@@ -123,10 +118,6 @@ if (num_filas==1):
       st.success(df_dia.iloc[0,6])
 else:
     st.error("No hay datos de la fecha")
-
-
-############################################################################
-
 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Comparación del Índice Nominal e Índice Real"}</h1>', unsafe_allow_html=True)
 df = c.drop(columns = ["RENTA ANUAL ÍNDICE NOMINAL","RENTA ANUAL ÍNDICE REAL"])
@@ -230,7 +221,10 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"3. Aplica la tasa del 
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Descuenta las retenciones que tu empleador realizó durante el año"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Rentas de Fuente Extranjera:"}</h1>', unsafe_allow_html=True)
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Provienen de una fuente ubicada fuera del territorio nacional. No se categorizan y se consideran para efectos del Impuesto, siempre que se hayan percibido. Por ejemplo, la renta obtenida por alquilar un inmueble en el extranjero, los intereses obtenidos por certificados de depósitos bancarios de entidades financieras del exterior, la renta obtenida por prestar servicios en el exterior, entre otras."}</h1>', unsafe_allow_html=True)
-
+st.markdown(f'<h1 style="color:#fafdfa;font-size:30px;">{"Bibliografía"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"MEF. (2017). Manual de Cálculo de los Índices del Tesoro Nominal y Real (VAC). MEF.gob."}</h1>', unsafe_allow_html=True)
+https://www.mef.gob.pe/contenidos/deuda_publ/documentos/Manual_calculo_indices_tesoro_nominal_real_VAC.pdf
+st.write("\t [https://www.mef.gob.pe/contenidos/deuda_publ/documentos/Manual_calculo_indices_tesoro_nominal_real_VAC.pdf](https://www.mef.gob.pe/contenidos/deuda_publ/documentos/Manual_calculo_indices_tesoro_nominal_real_VAC.pdf)")    
 st.markdown("\n")
 st.markdown("\n")
 st.markdown("\n")
