@@ -37,8 +37,8 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"- Parillo Sanchez, Yas
 
 st.markdown("---")
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"La información contenida en esta página web permite acceder al Dataset “Índices Soberanos 2010 - 2022” elaborado por el Ministerio de Economía y Finanzas del Perú (MEF)."""}</h1>', unsafe_allow_html=True)
-st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Fuente de datos:(https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberanos-2010-2022)"}</h1>', unsafe_allow_html=True)
-st.write(" [https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberanos-2010-2022](https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberanos-2010-2022)")     
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Fuente de datos:"}</h1>', unsafe_allow_html=True)
+st.write("[https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberanos-2010-2022](https://www.datosabiertos.gob.pe/dataset/%C3%ADndices-soberanos-2010-2022)")     
 #IMPORTANDO DATOS
 def load_data():
     url="https://raw.githubusercontent.com/Frank10OC/proyecto/main/indices_soberanos%20(1).csv"
