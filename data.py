@@ -226,7 +226,14 @@ st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"MEF. (2017). Manual de
 st.write("[https://www.mef.gob.pe/contenidos/deuda_publ/documentos/Manual_calculo_indices_tesoro_nominal_real_VAC.pdf](https://www.mef.gob.pe/contenidos/deuda_publ/documentos/Manual_calculo_indices_tesoro_nominal_real_VAC.pdf)")    
 st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Impuesto a la Renta (IR). (2022, 11 diciembre). Orientación - Superintendencia Nacional de Aduanas y de Administración Tributaria - Gobierno del Perú."}</h1>', unsafe_allow_html=True)
 st.write("[https://www.gob.pe/664-impuesto-a-la-renta-ir](https://www.gob.pe/664-impuesto-a-la-renta-ir)")    
-
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Calcular el Impuesto a la Renta de primera categoría. (2022, 11 diciembre). Orientación - Superintendencia Nacional de Aduanas y de Administración Tributaria - Gobierno del Perú. Orientación - Superintendencia Nacional de Aduanas y de Administración Tributaria - Gobierno del Perú."}</h1>', unsafe_allow_html=True)
+st.write("[https://www.gob.pe/1202-superintendencia-nacional-de-aduanas-y-de-administracion-tributaria-calcular-el-impuesto-a-la-renta-de-primera-categoria](https://www.gob.pe/1202-superintendencia-nacional-de-aduanas-y-de-administracion-tributaria-calcular-el-impuesto-a-la-renta-de-primera-categoria)")    
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Calcular el impuesto a la renta de segunda categoría por venta de inmuebles. (2022, 11 diciembre). Orientación - Superintendencia Nacional de Aduanas y de Administración Tributaria - Gobierno del Perú."}</h1>', unsafe_allow_html=True)
+st.write("[https://www.gob.pe/1204-superintendencia-nacional-de-aduanas-y-de-administracion-tributaria-calcular-el-impuesto-a-la-renta-de-segunda-categoria-por-venta-de-inmuebles](https://www.gob.pe/1204-superintendencia-nacional-de-aduanas-y-de-administracion-tributaria-calcular-el-impuesto-a-la-renta-de-segunda-categoria-por-venta-de-inmuebles)")    
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Calcular el impuesto a la renta de cuarta categoría. (2022, 11 diciembre). Orientación - Superintendencia Nacional de Aduanas y de Administración Tributaria - Gobierno del Perú."}</h1>', unsafe_allow_html=True)
+st.write("[https://www.gob.pe/7318-superintendencia-nacional-de-aduanas-y-de-administracion-tributaria-calcular-el-impuesto-de-cuarta-categoria](https://www.gob.pe/7318-superintendencia-nacional-de-aduanas-y-de-administracion-tributaria-calcular-el-impuesto-de-cuarta-categoria)")  
+st.markdown(f'<h1 style="color:#fafdfa;font-size:15px;">{"Calcular el impuesto a la renta de quinta categoría. (2022, 11 diciembre). Orientación - Superintendencia Nacional de Aduanas y de Administración Tributaria - Gobierno del Perú."}</h1>', unsafe_allow_html=True)
+st.write("[https://www.gob.pe/7319-superintendencia-nacional-de-aduanas-y-de-administracion-tributaria-calcular-el-impuesto-de-quinta-categoria](https://www.gob.pe/7319-superintendencia-nacional-de-aduanas-y-de-administracion-tributaria-calcular-el-impuesto-de-quinta-categoria)")  
 
 
 st.markdown("\n")
@@ -242,7 +249,8 @@ st.markdown("\n")
 
 col1, col2 = st.columns(2)
 with col1:
-   st.image("https://facien.cayetano.edu.pe/images/documentacion/noticias/logos/logotipo_Ciencias.png", width=200)
+   st.image("https://facien.cayetano.edu.pe/images/documentacion/noticias/logos/logotipo_Ciencias.png", width=200)https://www.gob.pe/1204-superintendencia-nacional-de-aduanas-y-de-administracion-tributaria-calcular-el-impuesto-a-la-renta-de-segunda-categoria-por-venta-de-inmuebles
+
 with col2:
    st.image("https://www.cayetano.edu.pe/cayetano/images/2020/ingenieria-ambiental/TIT.png", width=200)
     
