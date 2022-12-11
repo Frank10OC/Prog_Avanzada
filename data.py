@@ -249,8 +249,7 @@ st.markdown("\n")
 
 col1, col2 = st.columns(2)
 with col1:
-   st.image("https://facien.cayetano.edu.pe/images/documentacion/noticias/logos/logotipo_Ciencias.png", width=200)https://www.gob.pe/1204-superintendencia-nacional-de-aduanas-y-de-administracion-tributaria-calcular-el-impuesto-a-la-renta-de-segunda-categoria-por-venta-de-inmuebles
-
+   st.image("https://facien.cayetano.edu.pe/images/documentacion/noticias/logos/logotipo_Ciencias.png", width=200)
 with col2:
    st.image("https://www.cayetano.edu.pe/cayetano/images/2020/ingenieria-ambiental/TIT.png", width=200)
     
