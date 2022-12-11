@@ -78,7 +78,7 @@ def load_fecha():
 dfecha = load_fecha()
 
 #Filtraje de AÑO-MES-DÍA
-st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Datos por filtro de fecha"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#fafdfa;font-size:20px;">{"Datos por Filtro de Fecha"}</h1>', unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
 
 with col1:
